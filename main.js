@@ -52,12 +52,23 @@ var Home = React.createClass({
 						<Row>
 							<Col lg={12} style={{textAlign:"center"}}>
 								<h2>What is McGame Jam?</h2>
-								<p className="lead">McGame jam is a very recent initiative to develop McGill's game developer community. Founded by Gerald Lang in 2015, McGam Jam is a 48 hour competition in which teams compose of people from different background come together in order to create a game.</p>								
+								<p className="lead">McGame jam is a very recent initiative to develop McGill's game developer community. 
+								Founded by Gerald Lang in 2015, McGam Jam is a 48 hour competition in which teams compose of people from different background come together in order to create a game.</p>								
 							</Col>
 						</Row>
 					</div>
+					<div className="container">
+						<Row>
+							<Col lg={12} style={{textAlign:"center"}}>
+								<h2>Where and when?</h2>
+								<p className="lead">McGame jam will be happening on the weekend of March 20th 2015 at huhuehue</p>								
+							</Col>
+						</Row>
+					</div>
+
 				</section>
-				
+
+
 				<aside className="call-to-action bg-primary">
 				<div className="container">
 					<Row>
@@ -69,7 +80,7 @@ var Home = React.createClass({
 						</Row>
 					</div>
 				</aside>
-				
+
 				<footer>
 				<div className="container">
 					<Row>
