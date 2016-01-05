@@ -61,7 +61,7 @@ var Home = React.createClass({
 						<Row>
 							<Col lg={12} style={{textAlign:"center"}}>
 								<h2>Where and when?</h2>
-								<p className="lead">McGame jam will be happening on the weekend of March 20th 2015 at huhuehue</p>								
+								<p className="lead">McGame jam will be happening on the weekend of March 20th 2015 at École de Technologie Supérieure (ÉTS)</p>								
 							</Col>
 						</Row>
 					</div>
