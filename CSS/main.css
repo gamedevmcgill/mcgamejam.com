@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+  }
+
+  .ghost {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*background: #EEE;*/
+  }
+
+  .ghost-ball {
+    border-radius: 149px;
+    background-color: transparent;
+    width: 75px;
+    height: 75px;
+    border: 3px solid transparent;
+    position: absolute;
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .ghost-ball: hover {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+  }
+  .ball-0 {
+    background-image: url(../Pictures/0.png);
+  }
+
+  .ball-1 {
+    background-image: url(../Pictures/1.png);
+  }
+
+  .ball-2 {
+    background-image: url(../Pictures/2.png);
+  }
+
+  .ball-3 {
+    background-image: url(../Pictures/3.png);
+  }
+#content{
+  z-index: 0;
+}
