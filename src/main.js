@@ -123,7 +123,7 @@ var Home = React.createClass({
 									</li>
 								</ul>
 								<hr className="small"/>
-								<p className="text-muted">Copyright &copy; McGame Jam 2016<br></br>Logo courtesy of Stella Designs 2016 &copy;</p>
+								<p className="text-muted">Copyright &copy; McGame Jam 2016<br></br>Logo courtesy of &copy; Stella Designs 2016</p>
 							</Col>
 						</Row>
 					</div>
