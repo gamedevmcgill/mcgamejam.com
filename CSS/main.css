@@ -35,19 +35,19 @@
       -ms-filter: "FlipH";
   }
   .ball-0 {
-    background-image: url(../Pictures/0.png);
+    background-image: url(../Pictures/0.gif);
   }
 
   .ball-1 {
-    background-image: url(../Pictures/1.png);
+    background-image: url(../Pictures/1.gif);
   }
 
   .ball-2 {
-    background-image: url(../Pictures/2.png);
+    background-image: url(../Pictures/2.gif);
   }
 
   .ball-3 {
-    background-image: url(../Pictures/3.png);
+    background-image: url(../Pictures/3.gif);
   }
 #content{
   z-index: 0;

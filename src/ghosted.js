@@ -63,7 +63,7 @@
 	var Ghosts = _react2.default.createClass({
 	  displayName: 'Ghosts',
 	  getInitialState: function getInitialState() {
-	    return { x: 250, y: 300 };
+	    return { x: 250, y: 300, hidden: false };
 	  },
 	  componentDidMount: function componentDidMount() {
 	    window.addEventListener('mousemove', this.handleMouseMove);
@@ -112,9 +112,6 @@
 	              key: i,
 	              className: 'ghost-ball ball-' + i,
 	              style: {
-	                WebkitTransform: 'scaleX(-1)',
-	                transform: 'scaleX(-1)',
-	                filter: 'FlipH',
 	                WebkitTransform: 'translate3d(' + (x - 25 + i * 50) + 'px, ' + (y - 25) + 'px, 0)',
 	                transform: 'translate3d(' + (x - 25 + i * 50) + 'px, ' + (y - 25) + 'px, 0)',
 	                zIndex: balls.length - i + 1
