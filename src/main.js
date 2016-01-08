@@ -72,6 +72,7 @@ var Home = React.createClass({
 						<Row>
 							<Col lg={10} lgOffset={1} style={{textAlign: "center"}}>
 								<h2>Our Sponsors</h2>
+								<p className="lead">Stay tuned for updates</p>
 								<hr className="small"/>
 								<Row>
 									<Col sm={6} md={6} lg={6}>
@@ -93,7 +94,7 @@ var Home = React.createClass({
 							<Col lg={12} style={{textAlign:"center"}}>
 									<h3>Interested in participating? Want to sponsor us?</h3>
 									<a href="#" className="btn btn-lg btn-light">Sign Up!</a>
-									<a href="#" className="btn btn-lg btn-dark">Sponsor Us!</a>
+									<a href="../Sponsorship/SponsorshipPackage.pdf" className="btn btn-lg btn-dark">Sponsor Us!</a>
 							</Col>						
 						</Row>
 					</div>
@@ -122,7 +123,7 @@ var Home = React.createClass({
 									</li>
 								</ul>
 								<hr className="small"/>
-								<p className="text-muted">Copyright &copy; McGame Jam 2015</p>
+								<p className="text-muted">Copyright &copy; McGame Jam 2016<br></br>Logo courtesy of &copy; Stella Designs 2016</p>
 							</Col>
 						</Row>
 					</div>
