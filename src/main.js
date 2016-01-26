@@ -26,6 +26,7 @@
 						}
 				});
 		});
+		
 var Home = React.createClass({
 	getInitialState: function(){
 		return{}
@@ -75,8 +76,14 @@ var Home = React.createClass({
 								<p className="lead">Stay tuned for updates</p>
 								<hr className="small"/>
 								<Row>
+									<Col sm={12} md={12} lg={12}>
+										<img style={{textAlign:"center"}} src="Pictures/LogicielLibre.jpg"></img>
+									</Col>
+								</Row>
+								<Row>
 									<Col sm={6} md={6} lg={6}>
 										<div className="proftfolio-item">
+											<img style={{textAlign:"center", backgroundColor:"black"}} src="Pictures/Conjure.png" height="85%" width="85%"></img>
 										</div>
 									</Col>
 									<Col sm={6} md={6} lg={6}>
