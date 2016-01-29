@@ -77,13 +77,13 @@ var Home = React.createClass({
 								<hr className="small"/>
 								<Row>
 									<Col sm={12} md={12} lg={12}>
-										<img style={{textAlign:"center"}} src="Pictures/LogicielLibre.jpg"></img>
+										<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/LogicielLibre.jpg"></img>
 									</Col>
 								</Row>
 								<Row>
 									<Col sm={6} md={6} lg={6}>
-										<div className="proftfolio-item">
-											<img style={{textAlign:"center", backgroundColor:"black"}} src="Pictures/Conjure.png" height="85%" width="85%"></img>
+										<div className="porftfolio-item">
+											<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px", backgroundColor:"black"}} src="Pictures/Conjure.png" height="85%" width="85%"></img>
 										</div>
 									</Col>
 									<Col sm={6} md={6} lg={6}>

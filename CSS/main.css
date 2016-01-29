@@ -49,6 +49,10 @@
   .ball-3 {
     background-image: url(../Pictures/3.gif);
   }
+  .sponsor{
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
 #content{
   z-index: 0;
 }
