@@ -26,8 +26,6 @@ $.getJSON( "../lib/languages/french.json"+'?', { cache: false},function() {})
     })
 	.always(function() {
 	});
-console.log(ENGLISH)
-console.log(FRENCH)
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
 		e.preventDefault();
@@ -58,24 +56,46 @@ $(function() {
 var Home = React.createClass({
 	getInitialState: function(){
 		return{
-			language: FRENCH,
+			language: ENGLISH,
+			selection: 'english',
+		}
+	},
+	handleChange: function(stateName) {
+		return function (event) {
+			var state={};
+			state[stateName]=event.target ? event.target.value : event;
+			this.setState(state)
+			}.bind(this);
+	},
+	handleLanguage: function(){
+		switch(this.state.selection){
+			case 'english':
+				this.setState({selection:'french',language:FRENCH})
+				break;
+			case 'french':
+				this.setState({selection:'english', language:ENGLISH})
+				break;
+			default:
+				this.setState({selection:'english', language:ENGLISH})
 		}
 	},
 	render: function(){
-		var B = ReactBootstrap,
+		var B = ReactBootstrap,	
 		Col = B.Col,
 		Row = B.Row,
+		Button = B.Button,
 		Tabs = B.Tabs;
 		var text=this.state.language;
-		console.log(this.state.language.motto) 
 		return(
 			<div>	
 				<header id="top" className="header">
 					<div className="text-vertical-center">
-							<h1>McGame Jam</h1>
+							<h1 style={{fontSize:"950%"}}>McGame Jam</h1>
 							<h3>{text.motto}</h3>
 							<br/>
 							<a href="#about" className="btn btn-dark btn-lg">{text.more}</a>
+							<br/><br/>
+							<Button className="btn btn-dark btn-lg" type="submit" onClick={this.handleLanguage}>{text.language}</Button>
 					</div>
 				</header>
 
