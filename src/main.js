@@ -1,143 +1,170 @@
-		// Closes the sidebar menu
-		$("#menu-close").click(function(e) {
-				e.preventDefault();
-				$("#sidebar-wrapper").toggleClass("active");
-		});
+var ENGLISH;
+var FRENCH;
+var NEWS=[];
+$(document).ready(function() {
+	$.ajaxSetup({ cache: false });
+});
+$.ajaxSetup({
+			async: false,
+			cache: false
+	});
+$.getJSON( "../lib/languages/english.json"+'?', { cache: false},function() {})
+	.done(function( data ) {
+		ENGLISH = data;
+		})
+	.fail( function(d, textStatus, error) {
+        console.error("getJSON failed, status: " + textStatus + ", error: "+error)
+    })
+	.always(function() {
+	});
+$.getJSON( "../lib/languages/french.json"+'?', { cache: false},function() {})
+	.done(function( data ) {
+		FRENCH = data;
+		})
+	.fail( function(d, textStatus, error) {
+        console.error("getJSON failed, status: " + textStatus + ", error: "+error)
+    })
+	.always(function() {
+	});
+console.log(ENGLISH)
+console.log(FRENCH)
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+		e.preventDefault();
+		$("#sidebar-wrapper").toggleClass("active");
+});
 
-		// Opens the sidebar menu
-		$("#menu-toggle").click(function(e) {
-				e.preventDefault();
-				$("#sidebar-wrapper").toggleClass("active");
-		});
-
-		// Scrolls to the selected menu item on the page
-		$(function() {
-				$('a[href*=#]:not([href=#])').click(function() {
-						if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-								var target = $(this.hash);
-								target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-								if (target.length) {
-										$('html,body').animate({
-												scrollTop: target.offset().top
-										}, 1000);
-										return false;
-								}
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#sidebar-wrapper").toggleClass("active");
+});
+// Scrolls to the selected menu item on the page
+$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+						if (target.length) {
+								$('html,body').animate({
+										scrollTop: target.offset().top
+								}, 1000);
+								return false;
 						}
-				});
+				}
 		});
+});
 		
 var Home = React.createClass({
 	getInitialState: function(){
-		return{}
+		return{
+			language: FRENCH,
+		}
 	},
 	render: function(){
 		var B = ReactBootstrap,
 		Col = B.Col,
 		Row = B.Row,
 		Tabs = B.Tabs;
+		var text=this.state.language;
+		console.log(this.state.language.motto) 
 		return(
-			<div>
-
+			<div>	
 				<header id="top" className="header">
 					<div className="text-vertical-center">
 							<h1>McGame Jam</h1>
-							<h3>Think. Create. Play.</h3>
+							<h3>{text.motto}</h3>
 							<br/>
-							<a href="#about" className="btn btn-dark btn-lg">Find Out More</a>
+							<a href="#about" className="btn btn-dark btn-lg">{text.more}</a>
 					</div>
 				</header>
 
-				<section id="about" className="about">
-					<div className="container">
-						<Row>
-							<Col lg={12} style={{textAlign:"center"}}>
-								<h2>What is McGame Jam?</h2>
-								<p className="lead">McGame jam is a very recent initiative to develop McGill's game developer community. 
-								Founded by Gerald Lang in 2015, it is a 48 hour competition in which teams composed of people from different backgrounds come together in order to create a game.</p>								
-							</Col>
-						</Row>
-					</div>
-					<div className="container">
-						<Row>
-							<Col lg={12} style={{textAlign:"center"}}>
-								<h2>Where and when?</h2>
-								<p className="lead">McGame jam will be happening on the weekend of March 20th 2015 at École de Technologie Supérieure (ÉTS)</p>								
-							</Col>
-						</Row>
-					</div>
-				</section>
-
-				<section id="portfolio" className="portfolio">
-					<div className="container">
-						<Row>
-							<Col lg={10} lgOffset={1} style={{textAlign: "center"}}>
-								<h2>Our Sponsors</h2>
-								<p className="lead">Stay tuned for updates</p>
-								<hr className="small"/>
-								<Row>
-									<Col sm={12} md={12} lg={12}>
-										<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/LogicielLibre.jpg"></img>
-									</Col>
-								</Row>
-								<Row>
-									<Col sm={6} md={6} lg={6}>
-										<div className="porftfolio-item">
-											<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px", backgroundColor:"black"}} src="Pictures/Conjure.png" height="85%" width="85%"></img>
-										</div>
-									</Col>
-									<Col sm={6} md={6} lg={6}>
-										<div className="proftfolio-item">
-										</div>
-									</Col>
-								</Row>
-							</Col>
-						</Row>
-					</div>
-				</section>						
-				<aside className="call-to-action bg-primary">
-				<div id="contact" className="container">
+			<section id="about" className="about">
+				<div className="container">
 					<Row>
-							<Col lg={12} style={{textAlign:"center"}}>
-									<h3>Interested in participating? Want to sponsor us?</h3>
-									<a href="#" className="btn btn-lg btn-light">Sign Up!</a>
-									<a href="../Sponsorship/SponsorshipPackage.pdf" className="btn btn-lg btn-dark">Sponsor Us!</a>
-							</Col>						
-						</Row>
-					</div>
-				</aside>
-
-				<footer>
+						<Col lg={12} style={{textAlign:"center"}}>
+							<h2>{text.what}</h2>
+							<p className="lead">{text.description}</p>
+						</Col>
+					</Row>
+				</div>
+				<div className="container">
+					<Row>
+						<Col lg={12} style={{textAlign:"center"}}>
+							<h2>{text.whereWhen}</h2>
+							<p className="lead">{text.actualWhereWhen}</p>								
+						</Col>
+					</Row>
+				</div>
+			</section>
+			<section id="portfolio" className="portfolio">
 				<div className="container">
 					<Row>
 						<Col lg={10} lgOffset={1} style={{textAlign: "center"}}>
-							<h4><strong>McGame Jam</strong></h4>
-                <ul className="list-unstyled">
-									<li>
-										<i className="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">terrenceko@terrenceko.com</a>
-									</li>
-								</ul>
-								<br/>
-								<ul className="list-inline">
-									<li>
-											<a href="#"><i className="fa fa-facebook fa-fw fa-3x"></i></a>
-									</li>
-									<li>
-											<a href="#"><i className="fa fa-twitter fa-fw fa-3x"></i></a>
-									</li>
-									<li>
-											<a href="#"><i className="fa fa-dribbble fa-fw fa-3x"></i></a>
-									</li>
-								</ul>
-								<hr className="small"/>
-								<p className="text-muted">Copyright &copy; McGame Jam 2016<br></br>Logo courtesy of &copy; Stella Designs 2016</p>
-							</Col>
-						</Row>
-					</div>
-				</footer>
-
-			</div>
-			)
+							<h2>{text.sponsors}</h2>
+							<p className="lead">{text.updates}</p>
+							<hr className="small"/>
+							<Row>
+								<Col sm={12} md={12} lg={12}>
+									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/LogicielLibre.jpg"></img>
+								</Col>
+							</Row>
+							<Row>
+								<Col sm={6} md={6} lg={6}>
+									<div className="porftfolio-item">
+										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px", backgroundColor:"black"}} src="Pictures/Conjure.png" height="85%" width="85%"></img>
+									</div>
+								</Col>
+								<Col sm={6} md={6} lg={6}>
+									<div className="proftfolio-item">
+									</div>
+								</Col>
+							</Row>
+						</Col>
+					</Row>
+				</div>
+			</section>						
+			<aside className="call-to-action bg-primary">
+			<div id="contact" className="container">
+				<Row>
+						<Col lg={12} style={{textAlign:"center"}}>
+								<h3>{text.interested}</h3>
+								<a href="#" className="btn btn-lg btn-light">{text.signup}</a>
+								<a href="../Sponsorship/SponsorshipPackage.pdf" className="btn btn-lg btn-dark">{text.sponsorUs}</a>
+						</Col>						
+					</Row>
+				</div>
+			</aside>
+			<footer>
+			<div className="container">
+				<Row>
+					<Col lg={10} lgOffset={1} style={{textAlign: "center"}}>
+						<h4><strong>McGame Jam</strong></h4>
+               <ul className="list-unstyled">
+								<li>
+									<i className="fa fa-envelope-o fa-fw"></i>  <a href="mailto:admin@mcgamejam.com">admin@mcgamejam.com</a>
+								</li>
+							</ul>
+							<br/>
+							<ul className="list-inline">
+								<li>
+										<a href="#"><i className="fa fa-facebook fa-fw fa-3x"></i></a>
+								</li>
+								<li>
+										<a href="#"><i className="fa fa-twitter fa-fw fa-3x"></i></a>
+								</li>
+								<li>
+										<a href="#"><i className="fa fa-dribbble fa-fw fa-3x"></i></a>
+								</li>
+							</ul>
+							<hr className="small"/>
+							<p className="text-muted">Copyright &copy; McGame Jam 2016<br></br>{text.logo}</p>
+						</Col>
+					</Row>
+				</div>
+			</footer>
+		</div>
+		)
 	}
 });
 ReactDOM.render(<Home/>, document.getElementById('content'));
