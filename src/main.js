@@ -90,7 +90,7 @@ var Home = React.createClass({
 			<div>	
 				<header id="top" className="header">
 					<div className="text-vertical-center">
-							<h1 style={{fontSize:"950%"}}>McGame Jam</h1>
+							<h1>McGame Jam</h1>
 							<h3>{text.motto}</h3>
 							<br/>
 							<a href="#about" className="btn btn-dark btn-lg">{text.more}</a>
