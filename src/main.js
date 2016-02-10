@@ -52,7 +52,7 @@ $(function() {
 				}
 		});
 });
-		
+
 var Home = React.createClass({
 	getInitialState: function(){
 		return{
@@ -80,14 +80,14 @@ var Home = React.createClass({
 		}
 	},
 	render: function(){
-		var B = ReactBootstrap,	
+		var B = ReactBootstrap,
 		Col = B.Col,
 		Row = B.Row,
 		Button = B.Button,
 		Tabs = B.Tabs;
 		var text=this.state.language;
 		return(
-			<div>	
+			<div>
 				<header id="top" className="header">
 					<div className="text-vertical-center">
 							<h1>McGame Jam</h1>
@@ -111,8 +111,31 @@ var Home = React.createClass({
 				<div className="container">
 					<Row>
 						<Col lg={12} style={{textAlign:"center"}}>
+							<h2>{text.who}</h2>
+							<p className="lead">{text.recommendations}</p>
+						</Col>
+					</Row>
+				</div>
+				<div className="container">
+					<Row>
+						<Col lg={12} style={{textAlign:"center"}}>
+							<h2>{text.preparation}</h2>
+							<p className="lead">{text.software}</p>
+							<p>Python+Pygame</p>
+							<p>Javascript</p>
+							<p>C#</p>
+							<p>C++</p>
+							<p>Unity</p>
+							<p>Unreal Engine</p>
+							<p>Mixamo</p>
+						</Col>
+					</Row>
+				</div>
+				<div className="container">
+					<Row>
+						<Col lg={12} style={{textAlign:"center"}}>
 							<h2>{text.whereWhen}</h2>
-							<p className="lead">{text.actualWhereWhen}</p>								
+							<p className="lead">{text.actualWhereWhen}</p>
 						</Col>
 					</Row>
 				</div>
@@ -130,6 +153,11 @@ var Home = React.createClass({
 								</Col>
 							</Row>
 							<Row>
+								<Col sm={12} md={12} lg={12}>
+									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/sus.png"></img>
+								</Col>
+							</Row>
+							<Row>
 								<Col sm={6} md={6} lg={6}>
 									<div className="porftfolio-item">
 										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px", backgroundColor:"black"}} src="Pictures/Conjure.png" height="85%" width="85%"></img>
@@ -137,13 +165,23 @@ var Home = React.createClass({
 								</Col>
 								<Col sm={6} md={6} lg={6}>
 									<div className="proftfolio-item">
+										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/wrecko.png" height="85%" width="85%"></img>
 									</div>
 								</Col>
+							</Row>
+							<Row>
+							<Col sm={6} md={6} lg={6}>
+								<div className="proftfolio-item">
+									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/constellationGames.png" height="85%" width="85%"></img>
+								</div>
+							</Col>
+							<Col sm={6} md={6} lg={6}>
+							</Col>
 							</Row>
 						</Col>
 					</Row>
 				</div>
-			</section>						
+			</section>
 			<aside className="call-to-action bg-primary">
 			<div id="contact" className="container">
 				<Row>
@@ -151,7 +189,7 @@ var Home = React.createClass({
 								<h3>{text.interested}</h3>
 								<a href="#" className="btn btn-lg btn-light">{text.signup}</a>
 								<a href="../Sponsorship/SponsorshipPackage.pdf" className="btn btn-lg btn-dark">{text.sponsorUs}</a>
-						</Col>						
+						</Col>
 					</Row>
 				</div>
 			</aside>
