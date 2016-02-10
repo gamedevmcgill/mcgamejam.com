@@ -172,7 +172,7 @@ var Home = React.createClass({
 							<Row>
 							<Col sm={6} md={6} lg={6}>
 								<div className="proftfolio-item">
-									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/constellationGames.png" height="85%" width="85%"></img>
+									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/constellationGames.png" height="70%" width="70%"></img>
 								</div>
 							</Col>
 							<Col sm={6} md={6} lg={6}>
@@ -206,7 +206,7 @@ var Home = React.createClass({
 							<br/>
 							<ul className="list-inline">
 								<li>
-										<a href="#"><i className="fa fa-facebook fa-fw fa-3x"></i></a>
+										<a href="https://www.facebook.com/mcgamejam/"><i className="fa fa-facebook fa-fw fa-3x"></i></a>
 								</li>
 								<li>
 										<a href="#"><i className="fa fa-twitter fa-fw fa-3x"></i></a>
