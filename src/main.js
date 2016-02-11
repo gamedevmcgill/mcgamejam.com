@@ -209,7 +209,7 @@ var Home = React.createClass({
 										<a href="https://www.facebook.com/mcgamejam/"><i className="fa fa-facebook fa-fw fa-3x"></i></a>
 								</li>
 								<li>
-										<a href="#"><i className="fa fa-twitter fa-fw fa-3x"></i></a>
+										<a href="https://twitter.com/McGameJam?cn=Zm9sbG93ZXI%3D&refsrc=email"><i className="fa fa-twitter fa-fw fa-3x"></i></a>
 								</li>
 								<li>
 										<a href="#"><i className="fa fa-dribbble fa-fw fa-3x"></i></a>
