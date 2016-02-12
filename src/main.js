@@ -187,7 +187,7 @@ var Home = React.createClass({
 				<Row>
 						<Col lg={12} style={{textAlign:"center"}}>
 								<h3>{text.interested}</h3>
-								<a href="#" className="btn btn-lg btn-light">{text.signup}</a>
+								<a href="https://www.eventbrite.ca/e/mcgamejam-2016-tickets-21470867944" className="btn btn-lg btn-light">{text.signup}</a>
 								<a href="../Sponsorship/SponsorshipPackage.pdf" className="btn btn-lg btn-dark">{text.sponsorUs}</a>
 						</Col>
 					</Row>
