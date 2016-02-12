@@ -176,6 +176,7 @@ var Home = React.createClass({
 								</div>
 							</Col>
 							<Col sm={6} md={6} lg={6}>
+								<p style={{fontSize:"500%", fontFamily:'Fjalla One', color:"#337ab7"}}>McGill CSUS</p>
 							</Col>
 							</Row>
 						</Col>
