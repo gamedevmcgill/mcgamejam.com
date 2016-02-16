@@ -175,8 +175,18 @@ var Home = React.createClass({
 									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/constellationGames.png" height="70%" width="70%"></img>
 								</div>
 							</Col>
-							<Col sm={6} md={6} lg={6}>
+							<Col style={{verticalAlign:"middle", marginTop:"10%"}} sm={6} md={6} lg={6}>
 								<p style={{fontSize:"500%", fontFamily:'Fjalla One', color:"#337ab7"}}>McGill CSUS</p>
+							</Col>
+							</Row>
+							<Row>
+							<Col sm={6} md={6} lg={6}>
+								<div className="proftfolio-item">
+									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="70%" width="70%"></img>
+								</div>
+							</Col>
+							<Col sm={6} md={6} lg={6}>
+
 							</Col>
 							</Row>
 						</Col>
