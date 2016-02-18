@@ -149,6 +149,11 @@ var Home = React.createClass({
 							<hr className="small"/>
 							<Row>
 								<Col sm={12} md={12} lg={12}>
+									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/ETS.png"></img>
+								</Col>
+							</Row>
+							<Row>
+								<Col sm={12} md={12} lg={12}>
 									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/LogicielLibre.jpg"></img>
 								</Col>
 							</Row>
