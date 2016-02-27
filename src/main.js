@@ -160,7 +160,7 @@ var Home = React.createClass({
 							</Row>
 							<Row>
 								<Col sm={12} md={12} lg={12}>
-									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/sus.png"></img>
+									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",backgroundColor:"grey"}} height="85%" width="85%" src="Pictures/sus.png"></img>
 								</Col>
 							</Row>
 							<Row>
