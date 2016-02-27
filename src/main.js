@@ -147,6 +147,7 @@ var Home = React.createClass({
 							<h2>{text.sponsors}</h2>
 							<p className="lead">{text.updates}</p>
 							<hr className="small"/>
+
 							<Row>
 								<Col sm={12} md={12} lg={12}>
 									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/ETS.png"></img>
@@ -170,30 +171,45 @@ var Home = React.createClass({
 								</Col>
 								<Col sm={6} md={6} lg={6}>
 									<div className="proftfolio-item">
+										{// <img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="100%" width="100%"></img>
+									}
 										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/wrecko.png" height="85%" width="85%"></img>
 									</div>
 								</Col>
 							</Row>
 							<Row>
-							<Col sm={6} md={6} lg={6}>
-								<div className="proftfolio-item">
-									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/constellationGames.png" height="70%" width="70%"></img>
-								</div>
-							</Col>
-							<Col style={{verticalAlign:"middle", marginTop:"10%"}} sm={6} md={6} lg={6}>
-								<p style={{fontSize:"500%", fontFamily:'Fjalla One', color:"#337ab7"}}>McGill CSUS</p>
-							</Col>
+								<Col sm={6} md={6} lg={6}>
+									<div className="proftfolio-item">
+										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/constellationGames.png" height="70%" width="70%"></img>
+									</div>
+								</Col>
+								<Col style={{verticalAlign:"middle", marginTop:"10%"}} sm={6} md={6} lg={6}>
+									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/aus.png" height="100%" width="100%"></img>
+								</Col>
 							</Row>
 							<Row>
-							<Col sm={6} md={6} lg={6}>
-								<div className="proftfolio-item">
-									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="70%" width="70%"></img>
-								</div>
-							</Col>
-							<Col sm={6} md={6} lg={6}>
-
-							</Col>
+								<Col sm={6} md={6} lg={6}>
+									<div className="proftfolio-item">
+										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="70%" width="70%"></img>
+									</div>
+								</Col>
+								<Col sm={6} md={6} lg={6}>
+									<p style={{fontSize:"500%", fontFamily:'Fjalla One', color:"#337ab7"}}>McGill CSUS</p>
+								</Col>
 							</Row>
+							{
+								// <Row>
+							// 	<Col sm={6} md={6} lg={6}>
+							// 		<div className="proftfolio-item">
+							// 			<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="70%" width="70%"></img>
+							// 		</div>
+							// 	</Col>
+							// 	<Col sm={6} md={6} lg={6}>
+							// 		<p style={{fontSize:"500%", fontFamily:'Fjalla One', color:"#337ab7"}}>McGill CSUS</p>
+							// <img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="70%" width="70%"></img>
+							// 	</Col>
+							// </Row>
+						}
 						</Col>
 					</Row>
 				</div>
