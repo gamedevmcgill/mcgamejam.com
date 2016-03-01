@@ -150,17 +150,17 @@ var Home = React.createClass({
 
 							<Row>
 								<Col sm={12} md={12} lg={12}>
-									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/ETS.png"></img>
+									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="70%" width="70%" src="Pictures/ETS.png"></img>
 								</Col>
 							</Row>
 							<Row>
 								<Col sm={12} md={12} lg={12}>
-									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="85%" width="85%" src="Pictures/LogicielLibre.jpg"></img>
+									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",}} height="80%" width="80%" src="Pictures/LogicielLibre.jpg"></img>
 								</Col>
 							</Row>
 							<Row>
 								<Col sm={12} md={12} lg={12}>
-									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",backgroundColor:"grey"}} height="85%" width="85%" src="Pictures/sus.png"></img>
+									<img style={{textAlign:"center", marginBottom: "15px",marginTop: "15px",backgroundColor:"grey"}} height="80%" width="80%" src="Pictures/sus.png"></img>
 								</Col>
 							</Row>
 							<Row>
@@ -188,11 +188,7 @@ var Home = React.createClass({
 								</Col>
 							</Row>
 							<Row>
-								<Col sm={6} md={6} lg={6}>
-									<div className="proftfolio-item">
-										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="70%" width="70%"></img>
-									</div>
-								</Col>
+
 								<Col sm={6} md={6} lg={6}>
 									<p style={{fontSize:"500%", fontFamily:'Fjalla One', color:"#337ab7"}}>McGill CSUS</p>
 								</Col>
@@ -210,6 +206,30 @@ var Home = React.createClass({
 							// 	</Col>
 							// </Row>
 						}
+						</Col>
+					</Row>
+				</div>
+				<div className="container">
+					<Row>
+						<Col lg={10} lgOffset={1} style={{textAlign: "center"}}>
+							<h1>{text.specialThanks}</h1>
+							<Row>
+								<Col style={{verticalAlign:"middle", marginTop:"10%"}}  sm={6} md={6} lg={6}>
+									<div className="proftfolio-item">
+										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/ecsess.png" height="70%" width="70%"></img>
+									</div>
+								</Col>
+								<Col style={{verticalAlign:"middle", marginTop:"10%"}} sm={6} md={6} lg={6}>
+									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/allegorithmic.png" height="70%" width="70%"></img>
+								</Col>
+							</Row>
+							<Row>
+							<Col sm={6} md={6} lg={6}>
+								<div className="proftfolio-item">
+									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="70%" width="70%"></img>
+								</div>
+							</Col>
+							</Row>
 						</Col>
 					</Row>
 				</div>
