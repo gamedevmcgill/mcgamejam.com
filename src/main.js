@@ -166,29 +166,35 @@ var Home = React.createClass({
 							<Row>
 								<Col sm={6} md={6} lg={6}>
 									<div className="porftfolio-item">
-										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px", backgroundColor:"black"}} src="Pictures/Conjure.png" height="85%" width="85%"></img>
+										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/ubisoft.png" height="85%" width="85%"></img>
 									</div>
 								</Col>
 								<Col sm={6} md={6} lg={6}>
-									<div className="proftfolio-item">
-										{// <img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="100%" width="100%"></img>
-									}
-										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/wrecko.png" height="85%" width="85%"></img>
+									<div className="porftfolio-item">
+										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px", backgroundColor:"black"}} src="Pictures/Conjure.png" height="85%" width="85%"></img>
 									</div>
 								</Col>
+
 							</Row>
 							<Row>
+									<Col sm={6} md={6} lg={6}>
+									<div className="proftfolio-item">
+									{// <img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/lanETS.png" height="100%" width="100%"></img>
+								}
+								<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/wrecko.png" height="85%" width="85%"></img>
+								</div>
+								</Col>
 								<Col sm={6} md={6} lg={6}>
 									<div className="proftfolio-item">
 										<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/constellationGames.png" height="70%" width="70%"></img>
 									</div>
 								</Col>
-								<Col style={{verticalAlign:"middle", marginTop:"10%"}} sm={6} md={6} lg={6}>
-									<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/aus.png" height="100%" width="100%"></img>
-								</Col>
 							</Row>
 							<Row>
 
+								<Col style={{verticalAlign:"middle", marginTop:"10%"}} sm={6} md={6} lg={6}>
+								<img style={{textAlign:"center",marginBottom: "15px",marginTop: "15px"}} src="Pictures/aus.png" height="100%" width="100%"></img>
+								</Col>
 								<Col sm={6} md={6} lg={6}>
 									<p style={{fontSize:"500%", fontFamily:'Fjalla One', color:"#337ab7"}}>McGill CSUS</p>
 								</Col>
