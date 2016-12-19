@@ -26,13 +26,24 @@ a:hover,a:active {
          
 }
 
-#main-title {
+#title-main {
     font-size: 8vh;
     margin-top: 5vh;
 }
 
+#title-tagline {
+    font-size: 5vh;
+    margin-top: -2vh;
+}
+
+#title-location {
+    font-size: 2vh;
+    margin-top: -0.5vh;
+    color: #FFFFFF;
+}
+
 #logo {
-    height: 50vh;
+    height: 40vh;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
