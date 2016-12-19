@@ -2,15 +2,15 @@ $(document).ready(function(){
 
     //if screen is narrow on document load, load dark navbar
     if ($(window).width() < 768) {
-        $(".navbar-fixed-top").removeClass('clear-nav').addClass('dark-nav');
+        addDark();
     }
 
-    //toggle between clear and dark navbars depending on screen width
+    //toggle between clear and dark navbars depending on screen width and position
     $(window).resize(function() {
-        if ($(window).width() < 768) {
-            $(".navbar-fixed-top").removeClass('clear-nav').addClass('dark-nav');
+        if ($(window).width() < 768 || $(window).scrollTop() >= 100) { //if scrolled down or narrow screen, add dark navbar
+            addDark();
         } else {
-            $(".navbar-fixed-top").addClass('clear-nav').addClass('dark-nav');
+            removeDark();
         }
     });
 
@@ -19,9 +19,17 @@ $(document).ready(function(){
         var scroll = $(window).scrollTop();
 
         if (scroll >= 100 || $(window).width() < 768) {
-            $(".navbar-fixed-top").removeClass('clear-nav').addClass('dark-nav');
+            addDark();
         } else {
-            $(".navbar-fixed-top").addClass('clear-nav').addClass('dark-nav');
+            removeDark();
         }
     });
 });
+
+function addDark() {
+    $(".navbar-fixed-top").removeClass('clear-nav').addClass('dark-nav');
+}
+
+function removeDark() {
+    $(".navbar-fixed-top").addClass('clear-nav').removeClass('dark-nav');   
+}

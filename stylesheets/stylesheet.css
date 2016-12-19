@@ -75,6 +75,10 @@ a:hover,a:active {
     background-size: cover;
 }
 
+#map {
+    margin: 2vh 0 5vh 0;
+}
+
 #footer {
     margin-top: 10em;
     height: 200px;
