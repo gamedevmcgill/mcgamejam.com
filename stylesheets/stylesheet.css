@@ -46,8 +46,8 @@ a:hover,a:active {
 }
 
 .dark-nav {
-    -webkit-transition: linear 0.2s all;
-    transition: linear 0.2s all;
+    -webkit-transition: ease-in 0.2s all;
+    transition: linear ease-in 0.2s all;
 }
 
 .vertical-center {
