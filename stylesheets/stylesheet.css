@@ -1,14 +1,53 @@
 h1,h2,h3,h4,h5,h6 {
+    font-family: Montserrat,sans-serif;
     text-align: center;
+    color: #ff0079;
 }
 
+a {
+    color: #ff0079;
+}
+
+a:hover,a:active {
+    color: #85003F;
+} 
 
 #main-body {
     margin: 0 10vw 0 10vw;
+    font-family: 'Open Sans',sans-serif;
 }
 
 #splash-screen {
+    color: #ffffff;
     height: 100vh;
+    background: #43C6AC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #43C6AC , #191654); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #43C6AC , #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+}
+
+#main-title {
+    font-size: 8vh;
+    margin-top: 5vh;
+}
+
+#logo {
+    height: 50vh;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    font-family: Montserrat, sans-serif;
+    color: #ffffff;
+}
+
+.clear-nav {
+    background: none;
+    border: none;
+}
+
+.dark-nav {
+    -webkit-transition: linear 0.2s all;
+    transition: linear 0.2s all;
 }
 
 .vertical-center {
