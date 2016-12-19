@@ -56,17 +56,13 @@ a:hover,a:active {
 }
 
 .paragraph {
-    margin-top: 5em;
+    margin-top: 2em;
     text-align: justify;
     font-size: 12pt;
 }
 
-.navbar-right {
-    margin-right: 2em;
-}
-
 .parallax {
-    height: 25vh;
+    height: 35vh;
     background: linear-gradient(to left, rgba(67, 198, 172, 0.5), #191654), url('../images/parall1.jpg');
     background-attachment: fixed;
     background-position: center;
