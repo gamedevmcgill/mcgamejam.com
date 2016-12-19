@@ -40,6 +40,11 @@ a:hover,a:active {
     color: #ffffff;
 }
 
+.navbar-right {
+    margin-right: 1em;
+    text-align: center;
+}
+
 .clear-nav {
     background: none;
     border: none;
@@ -63,7 +68,7 @@ a:hover,a:active {
 
 .parallax {
     height: 35vh;
-    background: linear-gradient(to left, rgba(67, 198, 172, 0.5), #191654), url('../images/parall1.jpg');
+    background: linear-gradient(to left, rgba(67, 198, 172, 0.5), #191654), url('../images/paral1.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
