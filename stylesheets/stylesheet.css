@@ -21,8 +21,8 @@ a:hover,a:active {
     color: #ffffff;
     height: 100vh;
     background: #43C6AC; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #43C6AC , #191654); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #43C6AC , #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #43C6AC , #191654); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #43C6AC , #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
          
 }
 
@@ -63,6 +63,15 @@ a:hover,a:active {
 
 .navbar-right {
     margin-right: 2em;
+}
+
+.parallax {
+    height: 25vh;
+    background: linear-gradient(to left, rgba(67, 198, 172, 0.5), #191654), url('../images/parall1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #footer {
