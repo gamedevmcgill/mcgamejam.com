@@ -28,7 +28,7 @@ a:hover,a:active {
 
 #title-main {
     font-size: 8vh;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 
 #title-tagline {
@@ -39,11 +39,12 @@ a:hover,a:active {
 #title-location {
     font-size: 2vh;
     margin-top: -0.5vh;
+    line-height: 3.5vh;
     color: #FFFFFF;
 }
 
 #logo {
-    height: 40vh;
+    height: 50vh;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
