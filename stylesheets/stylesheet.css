@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,sans-serif;
     text-align: center;
     color: #ff0079;
@@ -8,46 +8,11 @@ a {
     color: #ff0079;
 }
 
-a:hover,a:active {
+a:hover, a:active {
     color: #85003F;
-} 
-
-#main-body {
-    margin: 0 10vw 0 10vw;
-    font-family: 'Open Sans',sans-serif;
 }
 
-#splash-screen {
-    color: #ffffff;
-    height: 100vh;
-    background: #43C6AC; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #43C6AC , #191654); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #43C6AC , #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-         
-}
-
-#title-main {
-    font-size: 8vh;
-    margin-top: 3vh;
-}
-
-#title-tagline {
-    font-size: 5vh;
-    margin-top: -2vh;
-}
-
-#title-location {
-    font-size: 2vh;
-    margin-top: -0.5vh;
-    line-height: 3.5vh;
-    color: #FFFFFF;
-}
-
-#logo {
-    height: 50vh;
-}
-
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
     font-family: Montserrat, sans-serif;
     color: #ffffff;
 }
@@ -80,7 +45,7 @@ a:hover,a:active {
 
 .parallax {
     height: 35vh;
-    background: linear-gradient(to left, rgba(67, 198, 172, 0.5), #191654), url('../images/paral1.jpg');
+    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,6 +56,46 @@ a:hover,a:active {
     display: inline-block;
 }
 
+#splash-screen {
+    color: #ffffff;
+    height: 100vh;
+
+    /* fallback for old browsers */
+    background: #43C6AC;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, #43C6AC, #191654);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #43C6AC, #191654);
+}
+
+#logo {
+    height: 50vh;
+}
+
+#title-main {
+    font-size: 8vh;
+    margin-top: 3vh;
+}
+
+#title-tagline {
+    font-size: 5vh;
+    margin-top: -2vh;
+}
+
+#title-location {
+    font-size: 2vh;
+    margin-top: -0.5vh;
+    line-height: 3.5vh;
+    color: #FFFFFF;
+}
+
+#main-body {
+    margin: 0 10vw 0 10vw;
+    font-family: 'Open Sans',sans-serif;
+}
+
 #map {
     margin: 2vh 0 5vh 0;
 }
@@ -99,9 +104,15 @@ a:hover,a:active {
     text-align: center;
     margin-top: 10em;
     padding: 1em;
-    display:block;
-    overflow:auto;
-    background: #43C6AC; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #100E36 , #191654); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #100E36 , #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    overflow: auto;
+
+    /* fallback for old browsers */
+    background: #43C6AC;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to top, #100E36, #191654);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #100E36, #191654);
 }
