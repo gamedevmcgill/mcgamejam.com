@@ -45,7 +45,7 @@ a:hover, a:active {
 }
 
 .parallax {
-    height: 35vh;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +92,7 @@ a:hover, a:active {
 #title-tagline {
     font-size: 5vh;
     margin-top: -2vh;
+    color: #ff0079;
 }
 
 #title-location {
