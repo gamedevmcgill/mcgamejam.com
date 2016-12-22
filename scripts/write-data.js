@@ -1,6 +1,7 @@
 var ENGLISH
 var FRENCH
 
+
 $(document).ready(function() {
 	$.ajaxSetup({ cache: false });
 });
@@ -9,7 +10,7 @@ $.ajaxSetup({
 			cache: false
 	});
 
-$.getJSON( "../scripts/languages/english.json"+'?', { cache: false},function() {})
+$.getJSON( "./scripts/languages/english.json"+'?', { cache: false},function() {})
 	.done(function( data ) {
 		ENGLISH = data;
 		})
@@ -19,7 +20,7 @@ $.getJSON( "../scripts/languages/english.json"+'?', { cache: false},function() {
 	.always(function() {
 	});
 
-$.getJSON( "../scripts/languages/french.json"+'?', { cache: false},function() {})
+$.getJSON( "./scripts/languages/french.json"+'?', { cache: false},function() {})
 	.done(function( data ) {
 		FRENCH = data;
 		})
@@ -28,6 +29,13 @@ $.getJSON( "../scripts/languages/french.json"+'?', { cache: false},function() {}
     })
 	.always(function() {
 	});
-$('.whatisthis').click(function(){
-	$('.test').append(ENGLISH.more);
+
+
+$('.selecten').click(function(){
+	$('#title-tagline').text(ENGLISH.motto);
+	
+});
+
+$('.selectfr').click(function(){
+	$('#title-tagline').text(FRENCH.motto);
 });
