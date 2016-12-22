@@ -44,12 +44,15 @@ a:hover, a:active {
     line-height: 25pt;
 }
 
-.parallax {
+.header {
     height: 25vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1em 0 1em 0;
+}
+
+#parallax-1 {
     background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral1.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -57,7 +60,23 @@ a:hover, a:active {
     background-size: cover;
 }
 
-.parallax > h2 {
+#parallax-2 {
+    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-3 {
+    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header > h2 {
     text-transform: uppercase;
     font-size: 35pt;
 }
