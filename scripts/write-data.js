@@ -9,7 +9,7 @@ $.ajaxSetup({
 			cache: false
 	});
 
-$.getJSON( "/scripts/languages/english.json"+'?', { cache: false},function() {})
+$.getJSON( "../scripts/languages/english.json"+'?', { cache: false},function() {})
 	.done(function( data ) {
 		ENGLISH = data;
 		})
@@ -19,7 +19,7 @@ $.getJSON( "/scripts/languages/english.json"+'?', { cache: false},function() {})
 	.always(function() {
 	});
 
-$.getJSON( "/scripts/languages/french.json"+'?', { cache: false},function() {})
+$.getJSON( "../scripts/languages/french.json"+'?', { cache: false},function() {})
 	.done(function( data ) {
 		FRENCH = data;
 		})
