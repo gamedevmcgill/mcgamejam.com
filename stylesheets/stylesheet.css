@@ -1,15 +1,16 @@
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,sans-serif;
     text-align: center;
-    color: #ff0079;
+    color: #ffffff;
 }
 
 a {
     color: #ff0079;
 }
 
-a:hover,a:active {
+a:hover, a:active {
     color: #85003F;
+<<<<<<< HEAD
 } 
 
 .googlemap{
@@ -22,29 +23,18 @@ a:hover,a:active {
 #main-body {
     margin: 0 10vw 0 10vw;
     font-family: 'Open Sans',sans-serif;
+=======
+>>>>>>> 142b978cf871918b248fdc8bf3f5be120b53b690
 }
 
-#splash-screen {
-    color: #ffffff;
-    height: 100vh;
-    background: #43C6AC; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #43C6AC , #191654); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #43C6AC , #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-         
-}
-
-#main-title {
-    font-size: 8vh;
-    margin-top: 5vh;
-}
-
-#logo {
-    height: 50vh;
-}
-
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
     font-family: Montserrat, sans-serif;
     color: #ffffff;
+}
+
+.navbar-right {
+    margin-right: 1em;
+    text-align: center;
 }
 
 .clear-nav {
@@ -63,26 +53,111 @@ a:hover,a:active {
 }
 
 .paragraph {
-    margin-top: 5em;
+    margin-top: 2em;
     text-align: justify;
-    font-size: 12pt;
+    font-size: 13pt;
+    line-height: 25pt;
 }
 
-.navbar-right {
-    margin-right: 2em;
-}
-
-.parallax {
+.header {
     height: 25vh;
-    background: linear-gradient(to left, rgba(67, 198, 172, 0.5), #191654), url('../images/parall1.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0 1em 0;
+}
+
+#parallax-1 {
+    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+#parallax-2 {
+    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-3 {
+    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header > h2 {
+    text-transform: uppercase;
+    font-size: 35pt;
+}
+
+.img-holder {
+    display: inline-block;
+}
+
+#splash-screen {
+    color: #ffffff;
+    height: 100vh;
+
+    /* fallback for old browsers */
+    background: #43C6AC;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, #43C6AC, #191654);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #43C6AC, #191654);
+}
+
+#logo {
+    height: 50vh;
+}
+
+#title-main {
+    font-size: 8vh;
+    margin-top: 3vh;
+}
+
+#title-tagline {
+    font-size: 5vh;
+    margin-top: -2vh;
+    color: #ff0079;
+}
+
+#title-location {
+    font-size: 2vh;
+    margin-top: -0.5vh;
+    line-height: 3.5vh;
+    color: #FFFFFF;
+}
+
+#main-body {
+    margin: 20vh 10vw 0 10vw;
+    font-family: 'Open Sans',sans-serif;
+}
+
+#map {
+    margin: 2vh 0 5vh 0;
+}
+
 #footer {
+    text-align: center;
     margin-top: 10em;
-    height: 200px;
-    background-color: #f5f5f5;
+    padding: 1em;
+    display: block;
+    overflow: auto;
+
+    /* fallback for old browsers */
+    background: #43C6AC;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to top, #100E36, #191654);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #100E36, #191654);
 }

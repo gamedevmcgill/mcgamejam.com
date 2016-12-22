@@ -14,43 +14,58 @@
 <body>
     <!--Sticky navbar-->
     <nav class="navbar navbar-inverse navbar-fixed-top clear-nav">
-      <div class="container-fluid">
+        <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">McGame Jam</a>
+            </button>
+            <a class="navbar-brand" href="#splash-screen">McGame Jam</a>
+
+            <div class="navbar-text">
+              
+              <ul class="navbar-nav list-inline">
+                  <li><a href="#" onclick="writeEnglish();">EN</a></li>
+                  <li><a href="#">FR</a></li>
+              </ul>
+
+            </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li><a>|</a></li>
-            <li><a href="#" onclick="writeEnglish();">English</a></li>
-            <li><a href="#">French</a></li>
-          </ul>
+        <div class="collapse navbar-collapse"id="navbar-collapse">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#body-1">About</a></li>
+                <li><a href="#body-2">FAQ</a></li>
+                <li><a href="#body-3">Sign-up</a></li>
+            </ul>
         </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div><!-- /.container-fluid -->
     </nav>
 
     <div class="jumbotron vertical-center" id="splash-screen">
         <div class="container text-center">
-            <img class="img-responsive center-block" id="logo" src="images/logo.png"/>
-            <h1 id="main-title">McGame Jam 2017</h1>
+            <img class="img-responsive center-block" id="logo" src="images/logo.svg"/>
+            <h1 id="title-main">McGame Jam</h1>
+            <h2 id="title-tagline">Think. Create. Play.</h2>
+            <h3 id="title-location">1100 Rue Notre-Dame O, Montreal<br/>March 21, 2017</h3>
             <a href="#main-body"><i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i></a>
+            <div>learn more</div>
         </div>
     </div>
 
     <div id="main-body">
 
-        <div class="paragraph">
-            <h2>Hello World</h2>
+        <div class="paragraph" id="body-1">
+
+            <div class="header" id="parallax-1">
+                <h2>About</h2>
+            </div>
 
             <p>
             Lorem ipsum dolor sit amet, qui ad justo ceteros rationibus, mel soluta possit et. Justo dicant nec ei. Vitae voluptatum nam et, eos ut albucius philosophia. Mel cu viris legimus, tota delicata referrentur te vel. Veniam commune scriptorem ea ius, tritani tamquam voluptua his ei. Usu ut omnesque percipitur, ex quo modus forensibus appellantur.
@@ -59,11 +74,11 @@
             </p>
         </div>
         <hr/>
-        <div class="parallax">
-        </div>
-        <hr/>
-        <div class="paragraph">
-            <h2>Hello World</h2>
+        <div class="paragraph" id="body-2">
+
+            <div class="header" id="parallax-2">
+                <h2>FAQ</h2>
+            </div>
 
             <p>
             Lorem ipsum dolor sit amet, qui ad justo ceteros rationibus, mel soluta possit et. Justo dicant nec ei. Vitae voluptatum nam et, eos ut albucius philosophia. Mel cu viris legimus, tota delicata referrentur te vel. Veniam commune scriptorem ea ius, tritani tamquam voluptua his ei. Usu ut omnesque percipitur, ex quo modus forensibus appellantur.
@@ -72,6 +87,7 @@
             </p>
         </div>
         <hr/>
+<<<<<<< HEAD
         <div class="parallax">
         </div>
         <hr/>
@@ -80,6 +96,15 @@
         <div class='embed-container map'>
            <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
         </div>
+=======
+        <div class="paragraph" id="body-3">
+
+            <div class="header" id="parallax-3">
+                <h2>Sign-up</h2>
+            </div>
+            
+           <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+>>>>>>> 142b978cf871918b248fdc8bf3f5be120b53b690
 
             <p>
             Lorem ipsum dolor sit amet, qui ad justo ceteros rationibus, mel soluta possit et. Justo dicant nec ei. Vitae voluptatum nam et, eos ut albucius philosophia. Mel cu viris legimus, tota delicata referrentur te vel. Veniam commune scriptorem ea ius, tritani tamquam voluptua his ei. Usu ut omnesque percipitur, ex quo modus forensibus appellantur.
@@ -87,11 +112,27 @@
             Accusata temporibus mel ad, quod congue ei cum. Ius ut erat eirmod qualisque, iusto nostro facete sit an. Id duo reque reprehendunt, sed enim semper aperiam cu, doming explicari in vim. Cu argumentum inciderint usu. Cetero salutandi liberavisse ius ut, id mei sumo omittam accommodare.
             </p>
         </div>
+        <hr/>
     </div><!--/#main-body-->
 
     <footer id="footer">
+
+        <div class="container img-holder">
+            <h4>sponsored by</h4>
+            <ul class="list-inline">
+                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
+                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
+                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
+                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
+                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
+            </ul>
+            
+        </div>
         <div class="container">
-            <p class="text-muted">Place sticky footer content here.</p>
+            <ul class="list-inline">
+                <li><a href="http://www.facebook.com"><i class="fa fa-2x fa-facebook"></i></a></li>
+                <li><a href="http://www.twitter.com"><i class="fa fa-2x fa-twitter"></i></a></li>
+            </ul>
         </div>
     </footer>
 
