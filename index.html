@@ -73,8 +73,8 @@
             Accusata temporibus mel ad, quod congue ei cum. Ius ut erat eirmod qualisque, iusto nostro facete sit an. Id duo reque reprehendunt, sed enim semper aperiam cu, doming explicari in vim. Cu argumentum inciderint usu. Cetero salutandi liberavisse ius ut, id mei sumo omittam accommodare.
             </p>
 
-            <div class='embed-container map'>
-                <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+            <div id="map-div">
+                <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
             </div>
         </div>
         <hr/>
@@ -133,20 +133,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="scripts/navbar-scroll.js"></script>
     <script src="scripts/button-scroll.js"></script>
+    <script src="scripts/map-clickablility.js"></script>
     <script src="scripts/write-data.js"></script>
-    
-    <!-- By default, you cannot scroll the map. However, when clicked, it becomes draggable and scrollabe. -->
-    <script>
-            
-        $('.map').click(function () {
-            $('.map iframe').css("pointer-events", "auto");
-        });
-            
-       $( ".map" ).mouseleave(function() {
-            $('.map iframe').css("pointer-events", "none"); 
-        });
 
-    </script>
 </body>
 
 </html>

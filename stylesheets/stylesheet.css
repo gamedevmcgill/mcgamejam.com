@@ -12,7 +12,7 @@ a:hover, a:active {
     color: #85003F;
 } 
 
-.googlemap{
+#embedded-map {
     pointer-events: none;
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */
