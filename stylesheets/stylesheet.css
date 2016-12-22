@@ -10,7 +10,6 @@ a {
 
 a:hover, a:active {
     color: #85003F;
-<<<<<<< HEAD
 } 
 
 .googlemap{
@@ -23,8 +22,6 @@ a:hover, a:active {
 #main-body {
     margin: 0 10vw 0 10vw;
     font-family: 'Open Sans',sans-serif;
-=======
->>>>>>> 142b978cf871918b248fdc8bf3f5be120b53b690
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
