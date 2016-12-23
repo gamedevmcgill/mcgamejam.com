@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,sans-serif;
     text-align: center;
@@ -17,11 +21,6 @@ a:hover, a:active {
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+ */
-}
-
-#main-body {
-    margin: 0 10vw 0 10vw;
-    font-family: 'Open Sans',sans-serif;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
@@ -100,6 +99,7 @@ a:hover, a:active {
 #splash-screen {
     color: #ffffff;
     height: 100vh;
+    position: relative;
 
     /* fallback for old browsers */
     background: #43C6AC;
@@ -135,11 +135,19 @@ a:hover, a:active {
 
 #main-body {
     margin: 20vh 10vw 0 10vw;
-    font-family: 'Open Sans',sans-serif;
 }
 
-#map {
-    margin: 2vh 0 5vh 0;
+#main-sponsor {
+    font-family: Montserrat, sans-serif;
+    font-size:2vh;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+
+#ubisoft-logo {
+    height: 10vh;
+    width: 10vh;
 }
 
 #footer {
