@@ -31,7 +31,7 @@ $.getJSON( "./scripts/languages/french.json"+'?', { cache: false},function() {})
 	});
 
 
-$('.selecten').click(function(){
+$('#select-en').click(function(){
 	$('#title-tagline').text(ENGLISH.motto);
 	$('#learn').text(ENGLISH.more);
 	$('#parallax-1 h2').text(ENGLISH.what);
@@ -47,7 +47,7 @@ $('.selecten').click(function(){
 	
 });
 
-$('.selectfr').click(function(){
+$('#select-fr').click(function(){
 
 	$('#title-tagline').text(FRENCH.motto);
 	$('#learn').text(FRENCH.more);
