@@ -69,7 +69,8 @@ $.getJSON( "./scripts/languages/french.json"+'?', { cache: false},function() {})
 	});
 
 
-$('#select-en').click(function(){
+$('#select-en').click(function($e){
+	$e.preventDefault();
 	langselect = "EN";
 	//Big header user sees
 	$('#title-tagline').text(ENGLISH.motto);
@@ -112,7 +113,8 @@ $('#select-en').click(function(){
 	
 });
 
-$('#select-fr').click(function(){
+$('#select-fr').click(function($e){
+	$e.preventDefault();
 	langselect = "FR";
 	$('#title-tagline').text(FRENCH.motto);
 	$('#learn').text(FRENCH.more);
