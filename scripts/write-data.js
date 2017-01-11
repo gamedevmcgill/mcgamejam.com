@@ -1,9 +1,47 @@
 var ENGLISH
 var FRENCH
-
+var langselect
 
 $(document).ready(function() {
 	$.ajaxSetup({ cache: false });
+		//Big header user sees
+		$('#title-tagline').text(ENGLISH.motto);
+		$('#learn').text(ENGLISH.more);
+		//About
+		$('#parallax-1 h2').text(ENGLISH.what);
+		$('#abouttext').text(ENGLISH.description);
+		//FAQ
+		$('#parallax-2 h2').text(ENGLISH.faq);
+		//Questions
+		$('#q1').text(ENGLISH.questions[0]);
+		$('#q2').text(ENGLISH.questions[1]);
+		$('#q3').text(ENGLISH.questions[2]);
+		$('#q4').text(ENGLISH.questions[3]);
+		$('#q5').text(ENGLISH.questions[4]);
+		$('#q6').text(ENGLISH.questions[5]);
+		$('#q7').text(ENGLISH.questions[6]);
+		//Answers
+		$('#where').text(ENGLISH.actualWhereWhen);
+		$('#who').text(ENGLISH.whocanparticipate);
+		$('#prep').text(ENGLISH.software);
+		$('#food').text(ENGLISH.food);
+		$('#bring').text(ENGLISH.tobring);
+		$('#alone').text(ENGLISH.alone);
+		$('#submit').text(ENGLISH.submit);
+		//Signup
+		$('#parallax-3 h2').text(ENGLISH.signup);
+		//Tickets
+		$('#tickets').text(ENGLISH.tickettitle);
+		$('#descripticket').text(ENGLISH.tickets[0]);
+		$('#s1').text(ENGLISH.tickets[1]);
+		$('#s2').text(ENGLISH.tickets[2]);
+		$('#s3').text(ENGLISH.tickets[3]);
+		$('#s4').text(ENGLISH.tickets[4]);
+		$('#s5').text(ENGLISH.tickets[5]);
+
+		$('#footnote2').text(ENGLISH.footnotes[1]);
+		$('#interest').text(ENGLISH.interested);
+		$('#footer h4').text(ENGLISH.sponsors);	
 });
 
 $.ajaxSetup({
@@ -32,11 +70,11 @@ $.getJSON( "./scripts/languages/french.json"+'?', { cache: false},function() {})
 
 
 $('#select-en').click(function(){
+	langselect = "EN";
 	$('#title-tagline').text(ENGLISH.motto);
 	$('#learn').text(ENGLISH.more);
 	$('#parallax-1 h2').text(ENGLISH.what);
 	$('#abouttext').text(ENGLISH.description);
-	$('#recommend').text(ENGLISH.recommendations);
 	$('#parallax-2 h2').text(ENGLISH.preparation);
 	$('#prep').text(ENGLISH.software);
 	$('#where').text(ENGLISH.actualWhereWhen);
@@ -48,7 +86,7 @@ $('#select-en').click(function(){
 });
 
 $('#select-fr').click(function(){
-
+	langselect = "FR";
 	$('#title-tagline').text(FRENCH.motto);
 	$('#learn').text(FRENCH.more);
 	$('#parallax-1 h2').text(FRENCH.what);

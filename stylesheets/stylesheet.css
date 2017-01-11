@@ -2,10 +2,15 @@ body {
     font-family: 'Open Sans',sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     font-family: Montserrat,sans-serif;
     text-align: center;
     color: #ffffff;
+}
+
+h3{
+    font-family: Montserrat,sans-serif;
+    color: #ff0079;
 }
 
 a {
