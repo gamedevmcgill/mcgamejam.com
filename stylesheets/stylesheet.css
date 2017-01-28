@@ -19,6 +19,13 @@ a {
 
 a:hover, a:active {
     color: #85003F;
+}
+
+p{
+    text-align:center;
+}
+#footnote1,#footnote2{
+    text-align:left;
 } 
 
 #embedded-map {
