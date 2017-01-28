@@ -79,6 +79,7 @@ function writeEnglish(){
 	$('#s3').text(ENGLISH.tickets[3]);
 	$('#s4').text(ENGLISH.tickets[4]);
 	$('#s5').text(ENGLISH.tickets[5]);
+	$('#footnote1').text(ENGLISH.footnotes[0]);
 	$('#footnote2').text(ENGLISH.footnotes[1]);
 	$('#interest').text(ENGLISH.interested);
 	$('#footer h4').text(ENGLISH.sponsors);	
@@ -120,6 +121,7 @@ function writeFrench(){
 	$('#s3').text(FRENCH.tickets[3]);
 	$('#s4').text(FRENCH.tickets[4]);
 	$('#s5').text(FRENCH.tickets[5]);
+	$('#footnote1').text(FRENCH.footnotes[0]);
 	$('#footnote2').text(FRENCH.footnotes[1]);
 	$('#interest').text(FRENCH.interested);
 	$('#footer h4').text(FRENCH.sponsors);	
