@@ -165,8 +165,8 @@ ul{
 }
 
 #ubisoft-logo {
-    height: 15vh;
-    width: 15vh;
+    height: 30vh;
+    width: 30vh;
 }
 
 #footer {
@@ -187,16 +187,16 @@ ul{
 }
 
 #sponsor{
-    height:17vh;
-    width:17vh;
+    height:12vh;
+    width:12vh;
 }
 
 #sponsor2{
-    height:5vh;
+    height:10vh;
     width:35vh;
 }
 
 #sponsornosvg{
-    height:10vh;
-    width:10vw;
+    height:7vh;
+    width:7vw;
 }
