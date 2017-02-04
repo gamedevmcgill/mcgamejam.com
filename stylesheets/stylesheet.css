@@ -11,6 +11,7 @@ h1, h2, h4, h5, h6 {
 h3{
     font-family: Montserrat,sans-serif;
     color: #ff0079;
+    text-align: center;
 }
 
 a {
@@ -24,6 +25,12 @@ a:hover, a:active {
 p{
     text-align:center;
 }
+
+ul{
+    text-align:center;
+    list-style-position: inside;
+}
+
 #footnote1,#footnote2{
     text-align:left;
 } 
