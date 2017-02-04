@@ -9,7 +9,6 @@ button{
     width: 30vw;
     height:10vh;
     font-size: 3vw;
-    font-weight:bold;
 }
 
 button:hover{
