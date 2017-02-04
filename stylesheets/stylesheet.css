@@ -185,3 +185,18 @@ ul{
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to top, #100E36, #191654);
 }
+
+#sponsor{
+    height:17vh;
+    width:17vh;
+}
+
+#sponsor2{
+    height:30vh;
+    width:30vh;
+}
+
+#sponsorpng{
+    height:10vh;
+    width:20vw;
+}
