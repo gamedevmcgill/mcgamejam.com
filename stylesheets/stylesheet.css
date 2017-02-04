@@ -2,10 +2,15 @@ body {
     font-family: 'Open Sans',sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     font-family: Montserrat,sans-serif;
     text-align: center;
     color: #ffffff;
+}
+
+h3{
+    font-family: Montserrat,sans-serif;
+    color: #ff0079;
 }
 
 a {
@@ -14,6 +19,13 @@ a {
 
 a:hover, a:active {
     color: #85003F;
+}
+
+p{
+    text-align:center;
+}
+#footnote1,#footnote2{
+    text-align:left;
 } 
 
 #embedded-map {
@@ -139,15 +151,15 @@ a:hover, a:active {
 
 #main-sponsor {
     font-family: Montserrat, sans-serif;
-    font-size:2vh;
+    font-size:3vh;
     position: absolute;
     right:10px;
     bottom:10px;
 }
 
 #ubisoft-logo {
-    height: 10vh;
-    width: 10vh;
+    height: 15vh;
+    width: 15vh;
 }
 
 #footer {
