@@ -11,6 +11,7 @@ h1, h2, h4, h5, h6 {
 h3{
     font-family: Montserrat,sans-serif;
     color: #ff0079;
+    text-align: center;
 }
 
 a {
@@ -24,6 +25,12 @@ a:hover, a:active {
 p{
     text-align:center;
 }
+
+ul{
+    text-align:center;
+    list-style:none;
+}
+
 #footnote1,#footnote2{
     text-align:left;
 } 
@@ -177,4 +184,19 @@ p{
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to top, #100E36, #191654);
+}
+
+#sponsor{
+    height:17vh;
+    width:17vh;
+}
+
+#sponsor2{
+    height:5vh;
+    width:35vh;
+}
+
+#sponsornosvg{
+    height:10vh;
+    width:10vw;
 }
