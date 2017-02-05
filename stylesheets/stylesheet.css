@@ -1,32 +1,13 @@
+/* Global body styling */
+
 body {
     font-family: 'Open Sans',sans-serif;
 }
 
-button{
-    border:none;
-    background-color: #ffe6f1;
-    color:#191654;
-    width: 30vw;
-    height:10vh;
-    font-size: 3vw;
-}
-
-button:hover{
-    background-color:#191654;
-    color:#FFFFFF;
-    transition-duration: 1s;
-}
-
-h1, h2, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,sans-serif;
     text-align: center;
     color: #ffffff;
-}
-
-h3{
-    font-family: Montserrat,sans-serif;
-    color: #ff0079;
-    text-align: center;
 }
 
 a {
@@ -37,28 +18,51 @@ a:hover, a:active {
     color: #85003F;
 }
 
-p{
-    text-align:center;
+/* END Global body styling */
+
+/* Re-useable component styling */
+
+.vertical-center {
+    display: flex;
+    align-items: center;
 }
 
-ul{
-    text-align:center;
-    list-style:none;
+.horizontal-center {
+    display: flex;
+    justify-content: center;
 }
 
-#footnote1,#footnote2{
-    text-align:left;
-} 
-
-#buttonlink{
-    text-align:center;
+.paragraph {
+    margin-top: 2em;
+    text-align: justify;
+    font-size: 11pt;
+    line-height: 20pt;
 }
 
-#embedded-map {
-    pointer-events: none;
-    -webkit-user-select: none; /* Chrome/Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
+.highlight {
+    color: #ff0079;
+}
+
+.btn-primary {
+    background-color: rgba(0,0,0,0);
+    color: #ff0079;
+    border-color: #ff0079;
+    border-radius: 0px;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-primary:hover, .btn-primary:active,  .btn-primary:focus {
+    background-color: #ff0079;
+    color: white;
+    border-color: #ff0079;
+}
+
+/* END Re-useable component styling */
+
+/* Navigation styling */
+
+.navbar-inverse {
+    background-color: rgba(4, 0, 20, 0.9);
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
@@ -81,17 +85,67 @@ ul{
     transition: linear ease-in 0.2s all;
 }
 
-.vertical-center {
-    display: flex;
-    align-items: center;
+/* END Navigation styling */
+
+/* Splash screen styling */
+
+#splash-screen {
+    color: #ffffff;
+    height: 100vh;
+    position: relative;
+
+    /* fallback for old browsers */
+    background: #43C6AC;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, #43C6AC, #191654);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #43C6AC, #191654);
 }
 
-.paragraph {
-    margin-top: 2em;
-    text-align: justify;
-    font-size: 13pt;
-    line-height: 25pt;
+#logo {
+    margin-top: 40px;
+    height: 40vh;
+    max-height: 500px;
 }
+
+#title-main {
+    font-size: 7vh;
+}
+
+#title-tagline {
+    font-size: 4vh;
+    margin-top: 0vh;
+    color: #ff0079;
+}
+
+#title-location {
+    font-size: 2vh;
+    margin-top: -0.5vh;
+    line-height: 3.5vh;
+    color: #FFFFFF;
+}
+
+#main-sponsor {
+    font-family: Montserrat, sans-serif;
+    font-size: 10pt;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#main-sponsor > span {
+    padding-right: 10px;
+}
+
+.sponsor-logo {
+    width: 15vh;
+}
+
+/* END Splash screen styling */
+
+/* Parallax header styling */
 
 .header {
     height: 25vh;
@@ -99,6 +153,11 @@ ul{
     align-items: center;
     justify-content: center;
     margin: 1em 0 1em 0;
+}
+
+.header > h2 {
+    text-transform: uppercase;
+    font-size: 35pt;
 }
 
 #parallax-1 {
@@ -125,68 +184,44 @@ ul{
     background-size: cover;
 }
 
-.header > h2 {
-    text-transform: uppercase;
-    font-size: 35pt;
+/* END Parallax header styling */
+
+/* Main content styling */
+
+#main-body {
+    width: 80vw;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#embedded-map {
+    pointer-events: none;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+#signup-button {
+    width: 150px;
+    font-size: 14pt;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
 }
 
 .img-holder {
     display: inline-block;
 }
 
-#splash-screen {
-    color: #ffffff;
-    height: 100vh;
-    position: relative;
-
-    /* fallback for old browsers */
-    background: #43C6AC;
-
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to bottom, #43C6AC, #191654);
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to bottom, #43C6AC, #191654);
+.software-logo {
+    width: 80px;
+    margin: 10px;
 }
 
-#logo {
-    height: 50vh;
-}
+/* END Main content styling */
 
-#title-main {
-    font-size: 8vh;
-    margin-top: 3vh;
-}
-
-#title-tagline {
-    font-size: 5vh;
-    margin-top: -2vh;
-    color: #ff0079;
-}
-
-#title-location {
-    font-size: 2vh;
-    margin-top: -0.5vh;
-    line-height: 3.5vh;
-    color: #FFFFFF;
-}
-
-#main-body {
-    margin: 20vh 10vw 0 10vw;
-}
-
-#main-sponsor {
-    font-family: Montserrat, sans-serif;
-    font-size:3vh;
-    position: absolute;
-    right:10px;
-    bottom:10px;
-}
-
-#ubisoft-logo {
-    height: 30vh;
-    width: 30vh;
-}
+/* Footer styling */
 
 #footer {
     text-align: center;
@@ -205,17 +240,8 @@ ul{
     background: linear-gradient(to top, #100E36, #191654);
 }
 
-#sponsor{
-    height:12vh;
-    width:12vh;
+.footer-logo {
+    height: 50px;
 }
 
-#sponsor2{
-    height:10vh;
-    width:35vh;
-}
-
-#sponsornosvg{
-    height:7vh;
-    width:7vw;
-}
+/* END Footer styling */
