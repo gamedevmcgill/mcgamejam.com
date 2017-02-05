@@ -129,8 +129,6 @@ function writeFrench(){
 	$('#signup-button').text(FRENCH.buyticket);	
 }
 
-//Default language on load
-$( document ).ready(function() {
-    $e.preventDefault();
+window.onload = function(){
 	writeEnglish();	
-});
+}
