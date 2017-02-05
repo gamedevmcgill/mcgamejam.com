@@ -83,6 +83,7 @@ function writeEnglish(){
 	$('#footnote2').text(ENGLISH.footnotes[1]);
 	$('#interest').text(ENGLISH.interested);
 	$('#footer h4').text(ENGLISH.sponsors);	
+	$('#signup-button').text(ENGLISH.buyticket);
 }
 
 function writeFrench(){
@@ -124,5 +125,6 @@ function writeFrench(){
 	$('#footnote1').text(FRENCH.footnotes[0]);
 	$('#footnote2').text(FRENCH.footnotes[1]);
 	$('#interest').text(FRENCH.interested);
-	$('#footer h4').text(FRENCH.sponsors);	
+	$('#footer h4').text(FRENCH.sponsors);
+	$('#signup-button').text(FRENCH.buyticket);	
 }
