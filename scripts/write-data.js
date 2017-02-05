@@ -1,9 +1,10 @@
 var ENGLISH
 var FRENCH
-
+var langselect
 
 $(document).ready(function() {
 	$.ajaxSetup({ cache: false });
+	writeEnglish();
 });
 
 $.ajaxSetup({
@@ -31,33 +32,97 @@ $.getJSON( "./scripts/languages/french.json"+'?', { cache: false},function() {})
 	});
 
 
-$('#select-en').click(function(){
+$('#select-en').click(function($e){
+	$e.preventDefault();
+	writeEnglish();	
+});
+
+$('#select-fr').click(function($e){
+	$e.preventDefault();
+	writeFrench();
+});
+
+
+function writeEnglish(){
+	langselect = "EN";
+	//Big header user sees
 	$('#title-tagline').text(ENGLISH.motto);
 	$('#learn').text(ENGLISH.more);
+	//About
 	$('#parallax-1 h2').text(ENGLISH.what);
 	$('#abouttext').text(ENGLISH.description);
-	$('#recommend').text(ENGLISH.recommendations);
-	$('#parallax-2 h2').text(ENGLISH.preparation);
-	$('#prep').text(ENGLISH.software);
+	//FAQ
+	$('#parallax-2 h2').text(ENGLISH.faq);
+	//Questions
+	$('#q1').text(ENGLISH.questions[0]);
+	$('#q2').text(ENGLISH.questions[1]);
+	$('#q3').text(ENGLISH.questions[2]);
+	$('#q4').text(ENGLISH.questions[3]);
+	$('#q5').text(ENGLISH.questions[4]);
+	$('#q6').text(ENGLISH.questions[5]);
+	$('#q7').text(ENGLISH.questions[6]);
+	//Answers
 	$('#where').text(ENGLISH.actualWhereWhen);
+	$('#who').text(ENGLISH.whocanparticipate);
+	$('#prep').text(ENGLISH.software);
+	$('#food').text(ENGLISH.food);
+	$('#bring').text(ENGLISH.tobring);
+	$('#alone').text(ENGLISH.alone);
+	$('#submit').text(ENGLISH.submit);
+	//Signup
 	$('#parallax-3 h2').text(ENGLISH.signup);
+	//Tickets
+	$('#tickets').text(ENGLISH.tickettitle);
+	$('#descripticket').text(ENGLISH.tickets[0]);
+	$('#s1').text(ENGLISH.tickets[1]);
+	$('#s2').text(ENGLISH.tickets[2]);
+	$('#s3').text(ENGLISH.tickets[3]);
+	$('#s4').text(ENGLISH.tickets[4]);
+	$('#s5').text(ENGLISH.tickets[5]);
+	$('#footnote1').text(ENGLISH.footnotes[0]);
+	$('#footnote2').text(ENGLISH.footnotes[1]);
 	$('#interest').text(ENGLISH.interested);
-	$('#footer h4').text(ENGLISH.sponsors);
+	$('#footer h4').text(ENGLISH.sponsors);	
+}
 
-	
-});
-
-$('#select-fr').click(function(){
-
+function writeFrench(){
+	langselect = "EN";
+	//Big header user sees
 	$('#title-tagline').text(FRENCH.motto);
 	$('#learn').text(FRENCH.more);
+	//About
 	$('#parallax-1 h2').text(FRENCH.what);
 	$('#abouttext').text(FRENCH.description);
-	$('#recommend').text(FRENCH.recommendations);
-	$('#parallax-2 h2').text(FRENCH.preparation);
-	$('#prep').text(FRENCH.software);
+	//FAQ
+	$('#parallax-2 h2').text(FRENCH.faq);
+	//Questions
+	$('#q1').text(FRENCH.questions[0]);
+	$('#q2').text(FRENCH.questions[1]);
+	$('#q3').text(FRENCH.questions[2]);
+	$('#q4').text(FRENCH.questions[3]);
+	$('#q5').text(FRENCH.questions[4]);
+	$('#q6').text(FRENCH.questions[5]);
+	$('#q7').text(FRENCH.questions[6]);
+	//Answers
 	$('#where').text(FRENCH.actualWhereWhen);
+	$('#who').text(FRENCH.whocanparticipate);
+	$('#prep').text(FRENCH.software);
+	$('#food').text(FRENCH.food);
+	$('#bring').text(FRENCH.tobring);
+	$('#alone').text(FRENCH.alone);
+	$('#submit').text(FRENCH.submit);
+	//Signup
 	$('#parallax-3 h2').text(FRENCH.signup);
+	//Tickets
+	$('#tickets').text(FRENCH.tickettitle);
+	$('#descripticket').text(FRENCH.tickets[0]);
+	$('#s1').text(FRENCH.tickets[1]);
+	$('#s2').text(FRENCH.tickets[2]);
+	$('#s3').text(FRENCH.tickets[3]);
+	$('#s4').text(FRENCH.tickets[4]);
+	$('#s5').text(FRENCH.tickets[5]);
+	$('#footnote1').text(FRENCH.footnotes[0]);
+	$('#footnote2').text(FRENCH.footnotes[1]);
 	$('#interest').text(FRENCH.interested);
-	$('#footer h4').text(FRENCH.sponsors);
-});
+	$('#footer h4').text(FRENCH.sponsors);	
+}

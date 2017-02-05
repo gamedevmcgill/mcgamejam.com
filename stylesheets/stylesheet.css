@@ -2,10 +2,31 @@ body {
     font-family: 'Open Sans',sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+button{
+    border:none;
+    background-color: #ffe6f1;
+    color:#191654;
+    width: 30vw;
+    height:10vh;
+    font-size: 3vw;
+}
+
+button:hover{
+    background-color:#191654;
+    color:#FFFFFF;
+    transition-duration: 1s;
+}
+
+h1, h2, h4, h5, h6 {
     font-family: Montserrat,sans-serif;
     text-align: center;
     color: #ffffff;
+}
+
+h3{
+    font-family: Montserrat,sans-serif;
+    color: #ff0079;
+    text-align: center;
 }
 
 a {
@@ -14,7 +35,24 @@ a {
 
 a:hover, a:active {
     color: #85003F;
+}
+
+p{
+    text-align:center;
+}
+
+ul{
+    text-align:center;
+    list-style:none;
+}
+
+#footnote1,#footnote2{
+    text-align:left;
 } 
+
+#buttonlink{
+    text-align:center;
+}
 
 #embedded-map {
     pointer-events: none;
@@ -139,15 +177,15 @@ a:hover, a:active {
 
 #main-sponsor {
     font-family: Montserrat, sans-serif;
-    font-size:2vh;
+    font-size:3vh;
     position: absolute;
     right:10px;
     bottom:10px;
 }
 
 #ubisoft-logo {
-    height: 10vh;
-    width: 10vh;
+    height: 30vh;
+    width: 30vh;
 }
 
 #footer {
@@ -165,4 +203,19 @@ a:hover, a:active {
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to top, #100E36, #191654);
+}
+
+#sponsor{
+    height:12vh;
+    width:12vh;
+}
+
+#sponsor2{
+    height:10vh;
+    width:35vh;
+}
+
+#sponsornosvg{
+    height:7vh;
+    width:7vw;
 }

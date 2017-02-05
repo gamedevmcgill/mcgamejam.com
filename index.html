@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--AUTHORS: Erick Zhao & Andrei Ungur -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,6 +51,7 @@
 
     <div class="jumbotron vertical-center" id="splash-screen">
         <div class="container text-center">
+            <div id="canvasDiv" style="width:100%;height:100%;"></div>
             <img class="img-responsive center-block" id="logo" src="images/logo.svg"/>
             <h1 id="title-main">McGame Jam</h1>
             <h2 id="title-tagline">Think. Create. Play.</h2>
@@ -58,47 +60,52 @@
             <div id='learn'>Find Out More</div>
         </div>
         <div id="main-sponsor">
-            <span>presented by</span>
-            <img id="ubisoft-logo" src="images/ubisoft.svg"/>
+            <span>presented by</span><br>
+            <img id="ubisoft-logo" src="images/sponsors/ubiwhite.svg"/><br>
+            <img id="sponsor2" src="images/sponsors/gamedev.svg"/>
         </div>
     </div>
 
     <div id="main-body">
-
+        <!-- All text is handled by javascript, but it is added in the HTML as a fail-safe if there's an issue with javascript. -->
         <div class="paragraph" id="body-1">
 
             <div class="header" id="parallax-1">
                 <h2>What is McGame Jam?</h2>
             </div>
 
-            <p id="abouttext">
-            McGame Jam is a very recent initiative to develop McGill's game developer community. Founded by Gerald Lang in 2015, it is a 48 hour competition in which teams composed of people from different backgrounds come together in order to create a game based on a give theme.
-            </p>
+            <p id="abouttext">McGame Jam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in any shape or form, based on a chosen thematic. Organized by Game Dev McGill in collaboration with our friends from Conjure, McGameJam's goal is to bring students together to collaborate and create great games, regardless of their skill level. So whether you are a veteran game developer or a level 1 game development noob, join us for a weekend of game development, learning, and fun.</p>
 
-            <p id="recommend">
-            McGame Jam welcomes all students and is a great opportunity for people with little experience to try out game development. Don't know how to code? You can do gameplay and visual design or even better, learn how to code! Already know how to code but don't know where to start? That's ok, we have a team of mentors who will be available to help out.
-            </p>
-
-            <div id="map-div">
-                <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
-            </div>
-
-            <p id="where">
-            McGame Jam will be held on the weekend of X at École de Technologie Supérieure (ÉTS)
-            </p>
         </div>
         <hr/>
         <div class="paragraph" id="body-2">
 
             <div class="header" id="parallax-2">
-                <h2>Preparation</h2>
+                <h2>F.A.Q.</h2>
             </div>
+            <br>
 
-            <p id='prep'>
-            In order to enjoy this competition to the fullest, we recommend you get familiar with these programming languages as well as tools:
+            <!-- When and Where? -->
+            <h3 id="q1">When and where is it?</h3>
+
+            <p id="where">McGame Jam 2017 will be happening between Friday March 10th and Sunday March 12th at the École de Téchnologie Supérieure. A detailed schedule will be posted closer to the event.
             </p>
-
+            
+            <div id="map-div">
+                <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+            </div>
+            <!-- Who can participate? -->
+            <h3 id="q2">Who can participate?</h3>
+            <p id="who">
+            McGame Jam is open to all students aged 18 or older*. As such, a valid school email will be required upon sign up. We reserve the right to cancel any tickets which do not respect those conditions.
+                <p id="footnote1">*If your school does not provide you with an email address or if you are younger than 18, please contact us and we will try to help.</p>
+            </p>
+            <!-- What should I prepare? -->
+            <h3 id="q3">What should I prepare?</h3>
+            <p id="prep">In order to enjoy this competition to the fullest, we recommend you get familiar with these programming languages as well as tools:
+            </p>
             <!-- The following is the same in both languages -->
+                
             <ul>
                 <li>Python+Pygame</li>
                 <li>Javascript</li>
@@ -109,18 +116,51 @@
                 <li>Mixamo</li>
             </ul>
 
+            <!-- Will there be food? -->
+            <h3 id="q4">Will there be food?</h3>
+            <p id="food">As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the need to purchase your own food.
+            </p>
+            <!-- What should I bring with me? -->
+            <h3 id="q5">What should I bring with me?</h3>
+            <p id="bring">Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the list goes on. I you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush, deodorant, spare clothing, sleeping bag, etc.  if you plan on spending the night with us! Most importantly, please bring your ticket to the event to facilitate badge and t-shirt pickup.
+            </p>
+            <!-- What if I am alone? -->            
+            <h3 id="q6">What if I am alone?</h3>
+            <p id="alone">You are welcome to use our facebook page and slack channel to try and find other teammates. Otherwise, we will attempt to group up participants who are alone and are looking for teammates.
+            </p>
+            <!-- Where do I submit my game for judging? -->            
+            <h3 id="q7">Where do I submit my game for judging?</h3>
+            <p id="submit">We will be using itch.io for the submission progress. Detailed instructions will be given at the event.
+            </p>
+
         </div>
         <hr/>
 
         <div class="paragraph" id="body-3">
 
             <div class="header" id="parallax-3">
-                <h2>Sign-up</h2>
+                <h2>Sign-Up!</h2>
             </div>
             
-            <p id='interest'>
-            Interested in participating? Want to sponsor us?
+            <div id="buttonlink">
+                <button type="button" onclick="window.location.href='https://www.eventbrite.ca/e/mcgame-jam-2017-tickets-31052274188'">Sign-Up Here</button>
+            </div>
+            
+            <h3 id="tickets">Tickets</h3>
+
+            <p id='descripticket'>To sign up you must purchase a ticket at the following link. You will need to bring your ticket to the event, otherwise you may be refused entry. Tickets provide you with the following:
             </p>
+            <ul>
+                <!-- s1 to s5 represents Sign-Up 1 to Sign-Up 5 -->
+                <li id="s1">48-hour access to the venue</li>
+                <li id="s2">A free commemorative McGame Jam 2017 t-shirt</li>
+                <li id="s3">Food provided for every meal</li>
+                <li id="s4">Midnight snacks</li>
+                <li id="s5">McGame Jam and sponsor swag*</li>
+            </ul>
+            <p id="footnote2">* Subject to availability
+            </p>
+        
         </div>
         <hr/>
     </div><!--/#main-body-->
@@ -128,15 +168,15 @@
     <footer id="footer">
 
         <div class="container img-holder">
-            <h4>Our Sponsors</h4>
+            <h4></h4>
             <ul class="list-inline">
-                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
-                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
-                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
-                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
-                <li><img src="http://i.imgur.com/hWZXO4g.png"/></li>
+                <li><img id="sponsor" src="images/sponsors/ets.svg"/></li>
+                <li><img id="sponsor" src="images/sponsors/conjure.svg"/></li>
+                <li><img id="sponsor" src="images/sponsors/ubiblack.svg"/></li>
+                <li><img id="sponsor" src="images/sponsors/lanets.svg"/></li>
+                <li><img id="sponsor" src="images/sponsors/ECSESS2.svg"/></li>
             </ul>
-            
+    
         </div>
         <div class="container">
             <ul class="list-inline">
