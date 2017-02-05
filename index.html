@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <link href="stylesheets/stylesheet.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.4.1/hint.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#splash-screen">McGame Jam</a>
+            <a class="navbar-brand" href="#splash-screen"><span class="highlight">Mc</span>GameJam</a>
 
             <div class="navbar-text">
               
@@ -53,16 +54,18 @@
         <div class="container text-center">
             <div id="canvasDiv" style="width:100%;height:100%;"></div>
             <img class="img-responsive center-block" id="logo" src="images/logo.svg"/>
-            <h1 id="title-main">McGame Jam</h1>
-            <h2 id="title-tagline">Think. Create. Play.</h2>
+            <h1 id="title-main"><span class="highlight">Mc</span>GameJam</h1>
+            <h2 class="highlight" id="title-tagline">Think. Create. Play.</h2>
             <h3 id="title-location">1100 Rue Notre-Dame O, Montreal<br/>March 21, 2017</h3>
             <a href="#main-body"><i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i></a>
             <div id='learn'>Find Out More</div>
         </div>
-        <div id="main-sponsor">
-            <span>presented by</span><br>
-            <img id="ubisoft-logo" src="images/sponsors/ubiwhite.svg"/><br>
-            <img id="sponsor2" src="images/sponsors/gamedev.svg"/>
+
+        <div class="vertical-center" id="main-sponsor">
+            <span> presented by </span>
+            <img class="splash-logo" src="images/sponsors/ubisoft.svg"/>
+            <span>&</span>
+            <img class="splash-logo" src="images/sponsors/gamedev.svg"/>
         </div>
     </div>
 
@@ -86,7 +89,7 @@
             <br>
 
             <!-- When and Where? -->
-            <h3 id="q1">When and where is it?</h3>
+            <h3 class="highlight" id="q1">When and where is it?</h3>
 
             <p id="where">McGame Jam 2017 will be happening between Friday March 10th and Sunday March 12th at the École de Téchnologie Supérieure. A detailed schedule will be posted closer to the event.
             </p>
@@ -94,42 +97,48 @@
             <div id="map-div">
                 <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
             </div>
+            <hr>
             <!-- Who can participate? -->
-            <h3 id="q2">Who can participate?</h3>
+            <h3 class="highlight" id="q2">Who can participate?</h3>
             <p id="who">
             McGame Jam is open to all students aged 18 or older*. As such, a valid school email will be required upon sign up. We reserve the right to cancel any tickets which do not respect those conditions.
                 <p id="footnote1">*If your school does not provide you with an email address or if you are younger than 18, please contact us and we will try to help.</p>
             </p>
+            <hr>
             <!-- What should I prepare? -->
-            <h3 id="q3">What should I prepare?</h3>
+            <h3 class="highlight" id="q3">What should I prepare?</h3>
             <p id="prep">In order to enjoy this competition to the fullest, we recommend you get familiar with these programming languages as well as tools:
             </p>
             <!-- The following is the same in both languages -->
                 
-            <ul>
-                <li>Python+Pygame</li>
-                <li>Javascript</li>
-                <li>C#</li>
-                <li>C++</li>
-                <li>Unity</li>
-                <li>Unreal Engine</li>
-                <li>Mixamo</li>
+            <ul class="list-inline">
+                <li><span class="hint--bottom" aria-label="pygame"><img class="software-logo" src="images/software/pygame.png"/></li></span>
+                <li><span class="hint--bottom" aria-label="Javascript"><img class="software-logo" src="images/software/js.png"/></li></span>
+                <li><span class="hint--bottom" aria-label="C++"><img class="software-logo" src="images/software/cpp.png"/></li></span>
+                <li><span class="hint--bottom" aria-label="C#"><img class="software-logo" src="images/software/csharp.png"/></li></span>
+                <li><span class="hint--bottom" aria-label="Unity"><img class="software-logo" src="images/software/unity.png"/></li></span>
+                <li><span class="hint--bottom" aria-label="Unreal Engine"><img class="software-logo" src="images/software/unreal.png"/></li></span>
+                <li><span class="hint--bottom" aria-label="Mixamo"><img class="software-logo" src="images/software/mixamo.png"/></li></span>
             </ul>
 
+            <hr>
             <!-- Will there be food? -->
-            <h3 id="q4">Will there be food?</h3>
+            <h3 class="highlight" id="q4">Will there be food?</h3>
             <p id="food">As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the need to purchase your own food.
             </p>
+            <hr>
             <!-- What should I bring with me? -->
-            <h3 id="q5">What should I bring with me?</h3>
+            <h3 class="highlight" id="q5">What should I bring with me?</h3>
             <p id="bring">Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the list goes on. I you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush, deodorant, spare clothing, sleeping bag, etc.  if you plan on spending the night with us! Most importantly, please bring your ticket to the event to facilitate badge and t-shirt pickup.
             </p>
+            <hr>
             <!-- What if I am alone? -->            
-            <h3 id="q6">What if I am alone?</h3>
+            <h3 class="highlight" id="q6">What if I am alone?</h3>
             <p id="alone">You are welcome to use our facebook page and slack channel to try and find other teammates. Otherwise, we will attempt to group up participants who are alone and are looking for teammates.
             </p>
+            <hr>
             <!-- Where do I submit my game for judging? -->            
-            <h3 id="q7">Where do I submit my game for judging?</h3>
+            <h3 class="highlight" id="q7">Where do I submit my game for judging?</h3>
             <p id="submit">We will be using itch.io for the submission progress. Detailed instructions will be given at the event.
             </p>
 
@@ -142,8 +151,7 @@
                 <h2>Sign-Up!</h2>
             </div>
             
-            <br>
-            <h3 id="tickets">Tickets</h3>
+            <h3 class="highlight" id="tickets">Tickets</h3>
 
             <p id='descripticket'>To sign up you must purchase a ticket at the following link. You will need to bring your ticket to the event, otherwise you may be refused entry. Tickets provide you with the following:
             </p>
@@ -157,6 +165,10 @@
             </ul>
             <p id="footnote2">* Subject to availability
             </p>
+            
+            <div>
+                <button id="signup-button" class="btn btn-primary" type="button" onclick="window.location.href='https://www.eventbrite.ca/e/mcgame-jam-2017-tickets-31052274188'">Link</button>
+            </div>
         
         </div>
         <hr/>
@@ -167,11 +179,11 @@
         <div class="container img-holder">
             <h4></h4>
             <ul class="list-inline">
-                <li><img id="sponsor" src="images/sponsors/ets.svg"/></li>
-                <li><img id="sponsor" src="images/sponsors/conjure.svg"/></li>
-                <li><img id="sponsor" src="images/sponsors/ubiblack.svg"/></li>
-                <li><img id="sponsor" src="images/sponsors/lanets.svg"/></li>
-                <li><img id="sponsor" src="images/sponsors/ECSESS.svg"/></li>
+                <li><img class="footer-logo" src="images/sponsors/ets.svg"/></li>
+                <li><img class="footer-logo" src="images/sponsors/conjure.svg"/></li>
+                <li><img class="footer-logo" src="images/sponsors/ubiblack.svg"/></li>
+                <li><img class="footer-logo" src="images/sponsors/lanets.svg"/></li>
+                <li><img class="footer-logo" src="images/sponsors/ECSESS2.svg"/></li>
             </ul>
     
         </div>
