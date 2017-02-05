@@ -128,3 +128,9 @@ function writeFrench(){
 	$('#footer h4').text(FRENCH.sponsors);
 	$('#signup-button').text(FRENCH.buyticket);	
 }
+
+//Default language on load
+$( document ).ready(function() {
+    $e.preventDefault();
+	writeEnglish();	
+});
