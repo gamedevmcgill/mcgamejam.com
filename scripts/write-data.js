@@ -4,7 +4,7 @@ var langselect
 
 $(document).ready(function() {
 	$.ajaxSetup({ cache: false });
-	writeEnglish();
+	//writeEnglish();
 });
 
 $.ajaxSetup({
@@ -14,6 +14,7 @@ $.ajaxSetup({
 $.getJSON( "./scripts/languages/english.json"+'?', { cache: false},function() {})
 	.done(function( data ) {
 		ENGLISH = data;
+		writeEnglish();
 		})
 	.fail( function(d, textStatus, error) {
         console.error("getJSON failed, status: " + textStatus + ", error: "+error)
@@ -129,7 +130,3 @@ function writeFrench(){
 	$('#signup-button').text(FRENCH.buyticket);	
 }
 
-window.onload = function(){
-	console.log("Loaded!");
-	writeEnglish();	
-}
