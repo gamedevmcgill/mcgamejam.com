@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--AUTHORS: Erick Zhao & Andrei Ungur -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>McGameJam 2017</title>
+    <title>McGameJam 2018</title>
     <!--Stylesheets-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-    <link href="stylesheets/stylesheet.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.4.1/hint.min.css" rel="stylesheet"/>
+    <link href="stylesheets/stylesheet.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.4.1/hint.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 </head>
 
@@ -19,55 +22,72 @@
     <!--Sticky navbar-->
     <nav class="navbar navbar-inverse navbar-fixed-top clear-nav">
         <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#splash-screen"><span class="highlight">Mc</span>GameJam</a>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#splash-screen">
+                    <span class="highlight">Mc</span>GameJam</a>
 
-            <div class="navbar-text">
-              
-              <ul class="navbar-nav list-inline">
-                  <li><a href="#" id="select-en">EN</a></li>
-                  <li><a href="#" id="select-fr">FR</a></li>
-              </ul>
+                <div class="navbar-text">
 
+                    <ul class="navbar-nav list-inline">
+                        <li>
+                            <a href="#" id="select-en">EN</a>
+                        </li>
+                        <li>
+                            <a href="#" id="select-fr">FR</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse"id="navbar-collapse">
-            <ul class="nav navbar-nav">
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#body-1">About</a></li>
-                <li><a href="#body-2">FAQ</a></li>
-                <li><a href="#body-3">Sign-up</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#body-1">About</a>
+                    </li>
+                    <li>
+                        <a href="#body-2">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#body-3">Sign-up</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
 
     <div class="jumbotron vertical-center" id="splash-screen">
         <div class="container text-center">
             <div id="canvasDiv" style="width:100%;height:100%;"></div>
-            <img class="img-responsive center-block" id="logo" src="images/logo.svg"/>
-            <h1 id="title-main"><span class="highlight">Mc</span>GameJam</h1>
+            <img class="img-responsive center-block" id="logo" src="images/logo.svg" />
+            <h1 id="title-main">
+                <span class="highlight">Mc</span>GameJam</h1>
             <h2 class="highlight" id="title-tagline">Think. Create. Play.</h2>
-            <h3 id="title-location">1100 Rue Notre-Dame O, Montreal<br/>March 10, 2017</h3>
-            <a href="#main-body"><i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i></a>
+            <h3 id="title-location">1100 Rue Notre-Dame O, Montreal
+                <br/>March 23, 2018</h3>
+            <a href="#main-body">
+                <i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
+            </a>
             <div id='learn'>Find Out More</div>
         </div>
 
         <div class="vertical-center" id="main-sponsor">
             <span> presented by </span>
-            <img class="splash-logo" src="images/sponsors/ubisoft.svg"/>
+            <img class="splash-logo" src="images/sponsors/ubisoft.svg" />
             <span>&</span>
-            <img class="splash-logo" src="images/sponsors/gamedev.svg"/>
+            <img class="splash-logo" src="images/sponsors/gamedev.svg" />
         </div>
     </div>
 
@@ -79,7 +99,11 @@
                 <h2>What is McGame Jam?</h2>
             </div>
 
-            <p id="abouttext">McGame Jam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in any shape or form, based on a chosen thematic. Organized by Game Dev McGill in collaboration with our friends from Conjure, McGameJam's goal is to bring students together to collaborate and create great games, regardless of their skill level. So whether you are a veteran game developer or a level 1 game development noob, join us for a weekend of game development, learning, and fun.</p>
+            <p id="abouttext">McGame Jam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in
+                any shape or form, based on a chosen thematic. Organized by Game Dev McGill in collaboration with our friends
+                from Conjure, McGameJam's goal is to bring students together to collaborate and create great games, regardless
+                of their skill level. So whether you are a veteran game developer or a level 1 game development noob, join
+                us for a weekend of game development, learning, and fun.</p>
 
         </div>
         <hr/>
@@ -93,55 +117,95 @@
             <!-- When and Where? -->
             <h3 class="highlight" id="q1">When and where is it?</h3>
 
-            <p id="where">McGame Jam 2017 will be happening between Friday March 10th and Sunday March 12th at the École de Téchnologie Supérieure.
+            <p id="where">McGame Jam 2018 will be happening between Friday March 10th and Sunday March 12th at the École de Téchnologie
+                Supérieure.
             </p>
 
-            <img style="max-width:800px; margin-bottom: 50px;" src="images/schedule.jpg">
-            
+            <img style="max-width:800px; margin-bottom: 50px;" src="images/schedule.png">
+
             <div id="map-div">
-                <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696" width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
+                <iframe id="embedded-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.765037516801!2d-73.56448478485146!3d45.494676079101325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a60aa839707%3A0xb732a719a45c45f6!2s%C3%89cole+de+technologie+sup%C3%A9rieure!5e0!3m2!1sen!2sca!4v1482132728696"
+                    width="600" height="450" frameborder="0" style="border:0; width:100%;" allowfullscreen></iframe>
             </div>
             <hr>
             <!-- Who can participate? -->
             <h3 class="highlight" id="q2">Who can participate?</h3>
             <p id="who">
-            McGame Jam is open to all students aged 18 or older*. As such, a valid school email will be required upon sign up. We reserve the right to cancel any tickets which do not respect those conditions.
-            <sup id="footnote1">*If your school does not provide you with an email address or if you are younger than 18, please contact us and we will try to help.</sup>
+                McGame Jam is open to all students aged 18 or older*. As such, a valid school email will be required upon sign up. We reserve
+                the right to cancel any tickets which do not respect those conditions.
+                <sup id="footnote1">*If your school does not provide you with an email address or if you are younger than 18, please contact
+                    us and we will try to help.</sup>
             </p>
             <hr>
             <!-- What should I prepare? -->
             <h3 class="highlight" id="q3">What should I prepare?</h3>
-            <p id="prep">In order to enjoy this competition to the fullest, we recommend you get familiar with these programming languages as well as tools:
+            <p id="prep">In order to enjoy this competition to the fullest, we recommend you get familiar with these programming languages
+                as well as tools:
             </p>
             <!-- The following is the same in both languages -->
-                
+
             <ul class="list-inline">
-                <li><span class="hint--bottom" aria-label="pygame"><img class="software-logo" src="images/software/pygame.png"/></li></span>
-                <li><span class="hint--bottom" aria-label="Javascript"><img class="software-logo" src="images/software/js.png"/></li></span>
-                <li><span class="hint--bottom" aria-label="C++"><img class="software-logo" src="images/software/cpp.png"/></li></span>
-                <li><span class="hint--bottom" aria-label="C#"><img class="software-logo" src="images/software/csharp.png"/></li></span>
-                <li><span class="hint--bottom" aria-label="Unity"><img class="software-logo" src="images/software/unity.png"/></li></span>
-                <li><span class="hint--bottom" aria-label="Unreal Engine"><img class="software-logo" src="images/software/unreal.png"/></li></span>
-                <li><span class="hint--bottom" aria-label="Mixamo"><img class="software-logo" src="images/software/mixamo.png"/></li></span>
+                <li>
+                    <span class="hint--bottom" aria-label="pygame">
+                        <img class="software-logo" src="images/software/pygame.png" />
+                </li>
+                </span>
+                <li>
+                    <span class="hint--bottom" aria-label="Javascript">
+                        <img class="software-logo" src="images/software/js.png" />
+                </li>
+                </span>
+                <li>
+                    <span class="hint--bottom" aria-label="C++">
+                        <img class="software-logo" src="images/software/cpp.png" />
+                </li>
+                </span>
+                <li>
+                    <span class="hint--bottom" aria-label="C#">
+                        <img class="software-logo" src="images/software/csharp.png" />
+                </li>
+                </span>
+                <li>
+                    <span class="hint--bottom" aria-label="Unity">
+                        <img class="software-logo" src="images/software/unity.png" />
+                </li>
+                </span>
+                <li>
+                    <span class="hint--bottom" aria-label="Unreal Engine">
+                        <img class="software-logo" src="images/software/unreal.png" />
+                </li>
+                </span>
+                <li>
+                    <span class="hint--bottom" aria-label="Mixamo">
+                        <img class="software-logo" src="images/software/mixamo.png" />
+                </li>
+                </span>
             </ul>
 
             <hr>
             <!-- Will there be food? -->
             <h3 class="highlight" id="q4">Will there be food?</h3>
-            <p id="food">As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the need to purchase your own food.
+            <p id="food">As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening
+                ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee
+                throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the
+                need to purchase your own food.
             </p>
             <hr>
             <!-- What should I bring with me? -->
             <h3 class="highlight" id="q5">What should I bring with me?</h3>
-            <p id="bring">Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the list goes on. I you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush, deodorant, spare clothing, sleeping bag, etc.  if you plan on spending the night with us! Most importantly, please bring your ticket to the event to facilitate badge and t-shirt pickup.
+            <p id="bring">Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the
+                list goes on. I you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush,
+                deodorant, spare clothing, sleeping bag, etc. if you plan on spending the night with us! Most importantly,
+                please bring your ticket to the event to facilitate badge and t-shirt pickup.
             </p>
             <hr>
-            <!-- What if I am alone? -->            
+            <!-- What if I am alone? -->
             <h3 class="highlight" id="q6">What if I am alone?</h3>
-            <p id="alone">You are welcome to use our facebook page and slack channel to try and find other teammates. Otherwise, we will attempt to group up participants who are alone and are looking for teammates.
+            <p id="alone">You are welcome to use our facebook page and slack channel to try and find other teammates. Otherwise, we will
+                attempt to group up participants who are alone and are looking for teammates.
             </p>
             <hr>
-            <!-- Where do I submit my game for judging? -->            
+            <!-- Where do I submit my game for judging? -->
             <h3 class="highlight" id="q7">Where do I submit my game for judging?</h3>
             <p id="submit">We will be using itch.io for the submission progress. Detailed instructions will be given at the event.
             </p>
@@ -154,55 +218,81 @@
             <div class="header" id="parallax-3">
                 <h2>Sign-Up!</h2>
             </div>
-            
+
             <h3 class="highlight" id="tickets">Tickets</h3>
 
-            <p id='descripticket'>To sign up you must purchase a ticket at the following link. You will need to bring your ticket to the event, otherwise you may be refused entry. Tickets provide you with the following:
+            <p id='descripticket'>To sign up you must purchase a ticket at the following link. You will need to bring your ticket to the event,
+                otherwise you may be refused entry. Tickets provide you with the following:
             </p>
             <ul>
                 <!-- s1 to s5 represents Sign-Up 1 to Sign-Up 5 -->
                 <li id="s1">48-hour access to the venue</li>
-                <li id="s2">A free commemorative McGame Jam 2017 t-shirt</li>
+                <li id="s2">A free commemorative McGame Jam 2018 t-shirt</li>
                 <li id="s3">Food provided for every meal</li>
                 <li id="s4">Midnight snacks</li>
                 <li id="s5">McGame Jam and sponsor swag*</li>
             </ul>
             <sup id="footnote2">* Subject to availability
             </sup>
-            
+
             <div>
-                <button id="signup-button" class="btn btn-primary" type="button" onclick="window.location.href='https://www.eventbrite.ca/e/mcgame-jam-2017-tickets-31052274188'">Buy Ticket</button>
+                <button id="signup-button" class="btn btn-primary" type="button" onclick="window.location.href='https://www.eventbrite.ca/e/mcgame-jam-2018-tickets-31052274188'">Buy Ticket</button>
             </div>
-        
+
         </div>
         <hr/>
-    </div><!--/#main-body-->
+    </div>
+    <!--/#main-body-->
 
     <footer id="footer">
 
         <div class="container img-holder">
             <h4></h4>
             <ul class="list-inline">
-                <li><img class="footer-logo" src="images/sponsors/ets.svg"/></li>
-                <li><img class="footer-logo" src="images/sponsors/conjure.svg"/></li>
-                <li><img class="footer-logo" src="images/sponsors/ubiblack.svg"/></li>
-                <li><img class="footer-logo" src="images/sponsors/lanets.svg"/></li>
-                <li><img class="footer-logo" src="images/sponsors/ECSESS2.svg"/></li>
-                <li><a href="https://wizrd.me/"><img class="footer-logo" src="images/sponsors/wizrd.svg"/></a></li>
+                <li>
+                    <img class="footer-logo" src="images/sponsors/ets.svg" />
+                </li>
+                <li>
+                    <img class="footer-logo" src="images/sponsors/conjure.svg" />
+                </li>
+                <li>
+                    <img class="footer-logo" src="images/sponsors/ubiblack.svg" />
+                </li>
+                <li>
+                    <img class="footer-logo" src="images/sponsors/lanets.svg" />
+                </li>
+                <li>
+                    <img class="footer-logo" src="images/sponsors/ECSESS2.svg" />
+                </li>
+                <li>
+                    <a href="https://wizrd.me/">
+                        <img class="footer-logo" src="images/sponsors/wizrd.svg" />
+                    </a>
+                </li>
             </ul>
-    
+
         </div>
         <div class="container">
             <ul class="list-inline">
-                <li><a href="http://www.facebook.com"><i class="fa fa-2x fa-facebook"></i></a></li>
-                <li><a href="http://www.twitter.com"><i class="fa fa-2x fa-twitter"></i></a></li>
+                <li>
+                    <a href="http://www.facebook.com">
+                        <i class="fa fa-2x fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com">
+                        <i class="fa fa-2x fa-twitter"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
 
     <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
     <script src="scripts/navbar-scroll.js"></script>
     <script src="scripts/button-scroll.js"></script>
     <script src="scripts/map-clickability.js"></script>

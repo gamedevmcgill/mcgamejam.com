@@ -11,11 +11,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #ff0079;
+    color: #f04c54;
 }
 
 a:hover, a:active {
-    color: #85003F;
+    color: #852d31;
 }
 
 sup {
@@ -45,21 +45,21 @@ sup {
 }
 
 .highlight {
-    color: #ff0079;
+    color: #f04c54;
 }
 
 .btn-primary {
     background-color: rgba(0,0,0,0);
-    color: #ff0079;
-    border-color: #ff0079;
+    color: #f04c54;
+    border-color: #f04c54;
     border-radius: 0px;
     transition: all 0.3s ease 0s;
 }
 
 .btn-primary:hover, .btn-primary:active,  .btn-primary:focus {
-    background-color: #ff0079;
+    background-color: #f04c54;
     color: white;
-    border-color: #ff0079;
+    border-color: #f04c54;
 }
 
 /* END Re-useable component styling */
@@ -103,26 +103,27 @@ sup {
     background: #43C6AC;
 
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(215deg, #43C6AC, #191654);
+    background: -webkit-linear-gradient(215deg, #f04c54, #234255 65%);
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(215deg, #43C6AC, #191654);
+    background: linear-gradient(215deg, #f04c54, #234255 65%);
 }
 
 #logo {
     margin-top: 40px;
-    height: 40vh;
+    height: 50vh;
     max-height: 500px;
 }
 
 #title-main {
     font-size: 7vh;
+    margin-top:-20px;
 }
 
 #title-tagline {
     font-size: 4vh;
     margin-top: 0vh;
-    color: #ff0079;
+    color: #f04c54;
 }
 
 #title-location {
@@ -166,7 +167,7 @@ sup {
 }
 
 #parallax-1 {
-    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral1.jpg");
+    background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654), url("../images/paral1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -174,7 +175,7 @@ sup {
 }
 
 #parallax-2 {
-    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral2.jpg");
+    background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654), url("../images/paral2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -182,7 +183,7 @@ sup {
 }
 
 #parallax-3 {
-    background: linear-gradient(to left, rgba(67, 198, 172, 0.4), #191654), url("../images/paral3.jpg");
+    background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654), url("../images/paral3.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
