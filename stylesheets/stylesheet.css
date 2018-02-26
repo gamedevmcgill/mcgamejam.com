@@ -67,7 +67,7 @@ sup {
 /* Navigation styling */
 
 .navbar-inverse {
-    background-color: rgba(4, 0, 20, 0.9);
+    background-color: rgba(35, 66, 85, 0.9);
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
@@ -237,13 +237,13 @@ sup {
     overflow: auto;
 
     /* fallback for old browsers */
-    background: #43C6AC;
+    background: #234255;
 
-    /* Chrome 10-25, Safari 5.1-6 */
+    /* Chrome 10-25, Safari 5.1-6
     background: -webkit-linear-gradient(to top, #100E36, #191654);
 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to top, #100E36, #191654);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+    background: linear-gradient(to top, #100E36, #191654); */
 }
 
 .footer-logo {
