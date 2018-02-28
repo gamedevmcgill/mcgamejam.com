@@ -11,6 +11,7 @@
     "Will there be food?",
     "What should I bring with me?",
     "What if I am alone?",
+    "How big can my team be?",
     "Where do I submit my game for judging?"
   ],
   "whocanparticipate":
@@ -27,6 +28,8 @@
     "Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the list goes on. If you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush, deodorant, spare clothing, sleeping bag, etc.  if you plan on spending the night with us! Most importantly, please bring your ticket to the event to facilitate badge and t-shirt pickup.",
   "alone":
     "You are welcome to use our facebook page and slack channel to try and find other teammates. Otherwise, we will attempt to group up participants who are alone and are looking for teammates.",
+  "teamsize":
+    "Please make sure your team is of at most eight members! Teams of bigger sizes will be encouraged to split up.",
   "submit":
     "We will be using itch.io for the submission progress. Detailed instructions will be given at the event.",
   "tickettitle": "Tickets",

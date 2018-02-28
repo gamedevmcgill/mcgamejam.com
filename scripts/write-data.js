@@ -69,6 +69,7 @@ function writeEnglish(){
 	$('#food').text(ENGLISH.food);
 	$('#bring').text(ENGLISH.tobring);
 	$('#alone').text(ENGLISH.alone);
+	$('#teamsize').text(ENGLISH.teamsize);
 	$('#submit').text(ENGLISH.submit);
 	//Signup
 	$('#parallax-3 h2').text(ENGLISH.signup);
@@ -112,6 +113,7 @@ function writeFrench(){
 	$('#food').text(FRENCH.food);
 	$('#bring').text(FRENCH.tobring);
 	$('#alone').text(FRENCH.alone);
+	$('#teamsize').text(FRENCH.teamsize);
 	$('#submit').text(FRENCH.submit);
 	//Signup
 	$('#parallax-3 h2').text(FRENCH.signup);
