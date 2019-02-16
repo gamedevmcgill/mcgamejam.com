@@ -14,37 +14,27 @@
     "How big can my team be?",
     "Where do I submit my game for judging?"
   ],
-  "whocanparticipate":
-    "McGame Jam is open to all students aged 18 or older*. As such, a valid school email will be required upon sign up. We reserve the right to cancel any tickets which do not respect those conditions.",
-  "description":
-    "McGame Jam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in any shape or form, based on a chosen thematic. Organized by Game Dev McGill in collaboration with our friends from Conjure, McGameJam's goal is to bring students together to collaborate and create great games, regardless of their skill level. So whether you are a veteran game developer or a level 1 game development noob, join us for a weekend of game development, learning, and fun.",
-  "software":
-    "In order to enjoy this competition to the fullest, we recommend you get familiar with these programming languages as well as tools:",
-  "actualWhereWhen":
-    "McGame Jam 2018 will be happening between Friday March 23rd and Sunday March 25th at the École de Téchnologie Supérieure.",
-  "food":
-    "As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the need to purchase your own food.",
-  "tobring":
-    "Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the list goes on. If you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush, deodorant, spare clothing, sleeping bag, etc.  if you plan on spending the night with us! Most importantly, please bring your ticket to the event to facilitate badge and t-shirt pickup.",
-  "alone":
-    "You are welcome to use our facebook page and slack channel to try and find other teammates. Otherwise, we will attempt to group up participants who are alone and are looking for teammates.",
-  "teamsize":
-    "Please make sure your team is of at most eight members! Teams of bigger sizes will be encouraged to split up.",
-  "submit":
-    "We will be using itch.io for the submission progress. Detailed instructions will be given at the event.",
+  "whocanparticipate": "McGame Jam is open to all students aged 18 or older*. As such, a valid school email will be required upon sign up. We reserve the right to cancel any tickets which do not respect those conditions.",
+  "description": "McGame Jam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in any shape or form, based on a chosen thematic. Organized by Game Dev McGill, McGameJam's goal is to bring students together to collaborate and create great games, regardless of their skill level. So whether you are a veteran game developer or a level 1 game development noob, join us for a weekend of game development, learning, and fun.",
+  "software": "In order to enjoy this competition to the fullest, we recommend you get familiar with these programming languages as well as tools:",
+  "actualWhereWhen": "McGame Jam 2019 will be happening between Friday March 15th and Sunday March 17th at Notman House.",
+  "food": "As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the need to purchase your own food.",
+  "tobring": "Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the list goes on. If you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush, deodorant, spare clothing, sleeping bag, etc.  if you plan on spending the night with us! Most importantly, please bring your ticket to the event to facilitate badge and t-shirt pickup.",
+  "alone": "You are welcome to use our facebook page and slack channel to try and find other teammates. Otherwise, we will attempt to group up participants who are alone and are looking for teammates.",
+  "teamsize": "Please make sure your team is of at most eight members! Teams of bigger sizes will be encouraged to split up.",
+  "submit": "We will be using itch.io for the submission progress. Detailed instructions will be given at the event.",
   "tickettitle": "Tickets",
   "tickets": [
     "To sign up you must purchase a ticket at the following link. You will need to bring your ticket to the event, otherwise you may be refused entry. If you purchase a student ticket, you must have a proof of enrolment (student ID, etc), otherwise you may be refused access and will not be refunded. Tickets provide you with the following:",
     "48-hour access to the venue",
-    "A free commemorative McGame Jam 2018 t-shirt",
+    "A free commemorative McGame Jam 2019 t-shirt",
     "Food provided for every meal.",
     "Midnight snacks",
     "McGame Jam and sponsor swag *"
   ],
   "sponsors": "Our Sponsors",
   "updates": "Stay tuned for updates",
-  "specialThanks":
-    "We would also like to thank the following organizations for their help",
+  "specialThanks": "We would also like to thank the following organizations for their help",
   "interested": "Interested in participating? Want to sponsor us?",
   "signup": "Sign Up!",
   "sponsorUs": "Sponsor Us!",

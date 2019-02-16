@@ -1,26 +1,32 @@
 /* Global body styling */
 
 body {
-    font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat,sans-serif;
-    text-align: center;
-    color: #ffffff;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  color: #ffffff;
 }
 
 a {
-    color: #f04c54;
+  color: #f04c54;
 }
 
-a:hover, a:active {
-    color: #852d31;
+a:hover,
+a:active {
+  color: #852d31;
 }
 
 sup {
-    display:block;
-    margin: 30px 0 30px 0;
+  display: block;
+  margin: 30px 0 30px 0;
 }
 
 /* END Global body styling */
@@ -28,38 +34,40 @@ sup {
 /* Re-useable component styling */
 
 .vertical-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .horizontal-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .paragraph {
-    margin-top: 2em;
-    text-align: justify;
-    font-size: 11pt;
-    line-height: 20pt;
+  margin-top: 2em;
+  text-align: justify;
+  font-size: 11pt;
+  line-height: 20pt;
 }
 
 .highlight {
-    color: #f04c54;
+  color: #f04c54;
 }
 
 .btn-primary {
-    background-color: rgba(0,0,0,0);
-    color: #f04c54;
-    border-color: #f04c54;
-    border-radius: 0px;
-    transition: all 0.3s ease 0s;
+  background-color: rgba(0, 0, 0, 0);
+  color: #f04c54;
+  border-color: #f04c54;
+  border-radius: 0px;
+  transition: all 0.3s ease 0s;
 }
 
-.btn-primary:hover, .btn-primary:active,  .btn-primary:focus {
-    background-color: #f04c54;
-    color: white;
-    border-color: #f04c54;
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #f04c54;
+  color: white;
+  border-color: #f04c54;
 }
 
 /* END Re-useable component styling */
@@ -67,27 +75,28 @@ sup {
 /* Navigation styling */
 
 .navbar-inverse {
-    background-color: rgba(35, 66, 85, 0.9);
+  background-color: rgba(35, 66, 85, 0.9);
 }
 
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
-    font-family: Montserrat, sans-serif;
-    color: #ffffff;
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  font-family: Montserrat, sans-serif;
+  color: #ffffff;
 }
 
 .navbar-right {
-    margin-right: 1em;
-    text-align: center;
+  margin-right: 1em;
+  text-align: center;
 }
 
 .clear-nav {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 
 .dark-nav {
-    -webkit-transition: ease-in 0.2s all;
-    transition: linear ease-in 0.2s all;
+  -webkit-transition: ease-in 0.2s all;
+  transition: linear ease-in 0.2s all;
 }
 
 /* END Navigation styling */
@@ -95,58 +104,58 @@ sup {
 /* Splash screen styling */
 
 #splash-screen {
-    color: #ffffff;
-    height: 100vh;
-    position: relative;
+  color: #ffffff;
+  height: 100vh;
+  position: relative;
 
-    /* fallback for old browsers */
-    background: #43C6AC;
+  /* fallback for old browsers */
+  background: #a33d82;
 
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(215deg, #f04c54, #234255 65%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(160deg, #60166c 20%, #d627a3);
 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(215deg, #f04c54, #234255 65%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(160deg, #60166c 20%, #d627a3);
 }
 
 #logo {
-    margin-top: 40px;
-    height: 50vh;
-    max-height: 500px;
+  margin-top: 40px;
+  height: 50vh;
+  max-height: 500px;
 }
 
 #title-main {
-    font-size: 7vh;
-    margin-top:-20px;
+  font-size: 7vh;
+  margin-top: -20px;
 }
 
 #title-tagline {
-    font-size: 4vh;
-    margin-top: 0vh;
-    color: #f04c54;
+  font-size: 4vh;
+  margin-top: 0vh;
+  color: #f04c54;
 }
 
 #title-location {
-    font-size: 2vh;
-    margin-top: -0.5vh;
-    line-height: 3.5vh;
-    color: #FFFFFF;
+  font-size: 2vh;
+  margin-top: -0.5vh;
+  line-height: 3.5vh;
+  color: #ffffff;
 }
 
 #main-sponsor {
-    font-family: Montserrat, sans-serif;
-    font-size: 10pt;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 10pt;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 #main-sponsor > span {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .splash-logo {
-    width: 15vh;
+  width: 15vh;
 }
 
 /* END Splash screen styling */
@@ -154,40 +163,43 @@ sup {
 /* Parallax header styling */
 
 .header {
-    height: 25vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1em 0 1em 0;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0 1em 0;
 }
 
 .header > h2 {
-    text-transform: uppercase;
-    font-size: 35pt;
+  text-transform: uppercase;
+  font-size: 35pt;
 }
 
 #parallax-1 {
-    background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654), url("../images/paral1.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654),
+    url("../images/paral1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #parallax-2 {
-    background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654), url("../images/paral2.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654),
+    url("../images/paral2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #parallax-3 {
-    background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654), url("../images/paral3.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654),
+    url("../images/paral3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* END Parallax header styling */
@@ -195,34 +207,34 @@ sup {
 /* Main content styling */
 
 #main-body {
-    width: 80vw;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 100px;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 #embedded-map {
-    pointer-events: none;
-    -webkit-user-select: none; /* Chrome/Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
+  pointer-events: none;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
 }
 
 #signup-button {
-    width: 175px;
-    font-size: 14pt;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 30px;
+  width: 175px;
+  font-size: 14pt;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .img-holder {
-    display: inline-block;
+  display: inline-block;
 }
 
 .software-logo {
-    width: 80px;
-    margin: 10px;
+  width: 80px;
+  margin: 10px;
 }
 
 /* END Main content styling */
@@ -230,16 +242,16 @@ sup {
 /* Footer styling */
 
 #footer {
-    text-align: center;
-    margin-top: 10em;
-    padding: 1em;
-    display: block;
-    overflow: auto;
+  text-align: center;
+  margin-top: 10em;
+  padding: 1em;
+  display: block;
+  overflow: auto;
 
-    /* fallback for old browsers */
-    background: #234255;
+  /* fallback for old browsers */
+  background: #234255;
 
-    /* Chrome 10-25, Safari 5.1-6
+  /* Chrome 10-25, Safari 5.1-6
     background: -webkit-linear-gradient(to top, #100E36, #191654);
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
@@ -247,7 +259,7 @@ sup {
 }
 
 .footer-logo {
-    height: 50px;
+  height: 50px;
 }
 
 /* END Footer styling */
