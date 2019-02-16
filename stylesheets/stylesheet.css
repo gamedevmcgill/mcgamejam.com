@@ -115,11 +115,7 @@ sup {
   height: 100vh;
   position: relative;
 
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(215deg, var(--primary), #234255 65%);
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAD0lEQVQImWNgQAX/yeAAAIHCA/0RE2WAAAAAAElFTkSuQmCC)
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAD0lEQVQImWNgQAUzyeAAAE32AmW31qMZAAAAAElFTkSuQmCC)
       repeat,
     linear-gradient(180deg, var(--primary), var(--white) 90%);
 }
