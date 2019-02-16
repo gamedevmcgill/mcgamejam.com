@@ -109,13 +109,13 @@ sup {
   position: relative;
 
   /* fallback for old browsers */
-  background: #a33d82;
+  background: #43c6ac;
 
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(160deg, #60166c 20%, #d627a3);
+  background: -webkit-linear-gradient(215deg, #f04c54, #234255 65%);
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(160deg, #60166c 20%, #d627a3);
+  background: linear-gradient(215deg, #f04c54, #234255 65%);
 }
 
 #logo {
