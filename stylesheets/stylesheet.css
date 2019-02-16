@@ -1,7 +1,15 @@
 /* Global body styling */
+:root {
+  --primary: #ce2c9c;
+  --primary-dark: #911f6e;
+  --primary-transparent: rgba(206, 44, 156, 0.4);
+  --secondary: #000000;
+  --white: #ffffff;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 h1,
@@ -16,17 +24,18 @@ h6 {
 }
 
 a {
-  color: #f04c54;
+  color: var(--primary);
+  transition: all 0.2s ease-in;
 }
 
 a:hover,
 a:active {
-  color: #852d31;
+  color: var(--primary-dark);
 }
 
 sup {
   display: block;
-  margin: 30px 0 30px 0;
+  margin: 30px 0;
 }
 
 /* END Global body styling */
@@ -45,19 +54,17 @@ sup {
 
 .paragraph {
   margin-top: 2em;
-  text-align: justify;
-  font-size: 11pt;
   line-height: 20pt;
 }
 
 .highlight {
-  color: #f04c54;
+  color: var(--primary);
 }
 
 .btn-primary {
   background-color: rgba(0, 0, 0, 0);
-  color: #f04c54;
-  border-color: #f04c54;
+  color: var(--primary);
+  border-color: var(--primary);
   border-radius: 0px;
   transition: all 0.3s ease 0s;
 }
@@ -65,9 +72,9 @@ sup {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: #f04c54;
+  background-color: var(--primary);
   color: white;
-  border-color: #f04c54;
+  border-color: var(--primary);
 }
 
 /* END Re-useable component styling */
@@ -75,13 +82,13 @@ sup {
 /* Navigation styling */
 
 .navbar-inverse {
-  background-color: rgba(35, 66, 85, 0.9);
+  background-color: var(--secondary);
 }
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
   font-family: Montserrat, sans-serif;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .navbar-right {
@@ -108,38 +115,36 @@ sup {
   height: 100vh;
   position: relative;
 
-  /* fallback for old browsers */
-  background: #43c6ac;
-
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(215deg, #f04c54, #234255 65%);
+  background: -webkit-linear-gradient(215deg, var(--primary), #234255 65%);
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(215deg, #f04c54, #234255 65%);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAD0lEQVQImWNgQAX/yeAAAIHCA/0RE2WAAAAAAElFTkSuQmCC)
+      repeat,
+    linear-gradient(180deg, var(--primary), var(--white) 90%);
 }
 
 #logo {
   margin-top: 40px;
-  height: 50vh;
   max-height: 500px;
+  user-select: none;
 }
 
 #title-main {
-  font-size: 7vh;
   margin-top: -20px;
 }
 
 #title-tagline {
   font-size: 4vh;
   margin-top: 0vh;
-  color: #f04c54;
+  color: var(--primary);
 }
 
 #title-location {
   font-size: 2vh;
   margin-top: -0.5vh;
   line-height: 3.5vh;
-  color: #ffffff;
+  color: var(--white);
 }
 
 #main-sponsor {
@@ -148,6 +153,8 @@ sup {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  background: var(--secondary);
+  padding: 10px;
 }
 
 #main-sponsor > span {
@@ -176,7 +183,7 @@ sup {
 }
 
 #parallax-1 {
-  background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654),
+  background: linear-gradient(to left, var(--primary-transparent), var(--primary)),
     url("../images/paral1.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -185,7 +192,7 @@ sup {
 }
 
 #parallax-2 {
-  background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654),
+  background: linear-gradient(to left, var(--primary-transparent), var(--primary)),
     url("../images/paral2.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -194,7 +201,7 @@ sup {
 }
 
 #parallax-3 {
-  background: linear-gradient(to left, rgba(240, 76, 84, 0.4), #191654),
+  background: linear-gradient(to left, var(--primary-transparent), var(--primary)),
     url("../images/paral3.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -208,7 +215,7 @@ sup {
 
 #main-body {
   width: 80vw;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -248,14 +255,7 @@ sup {
   display: block;
   overflow: auto;
 
-  /* fallback for old browsers */
-  background: #234255;
-
-  /* Chrome 10-25, Safari 5.1-6
-    background: -webkit-linear-gradient(to top, #100E36, #191654);
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
-    background: linear-gradient(to top, #100E36, #191654); */
+  background-color: var(--secondary);
 }
 
 .footer-logo {
