@@ -62,6 +62,7 @@ function writeEnglish(){
 	$('#q5').text(ENGLISH.questions[4]);
 	$('#q6').text(ENGLISH.questions[5]);
 	$('#q7').text(ENGLISH.questions[6]);
+	$('#q8').text(ENGLISH.questions[7]);
 	//Answers
 	$('#where').text(ENGLISH.actualWhereWhen);
 	$('#who').text(ENGLISH.whocanparticipate);
@@ -106,6 +107,7 @@ function writeFrench(){
 	$('#q5').text(FRENCH.questions[4]);
 	$('#q6').text(FRENCH.questions[5]);
 	$('#q7').text(FRENCH.questions[6]);
+	$('#q8').text(FRENCH.questions[7]);
 	//Answers
 	$('#where').text(FRENCH.actualWhereWhen);
 	$('#who').text(FRENCH.whocanparticipate);
