@@ -243,4 +243,8 @@ sup {
   height: 100px;
 }
 
+.footer-logo__small{
+	height: 20px;
+}
+
 /* END Footer styling */
