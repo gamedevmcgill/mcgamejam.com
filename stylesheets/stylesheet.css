@@ -1,20 +1,22 @@
 /* Global body styling */
 :root {
-  --dark-blue: #102232;
-  --light-blue: #7FB4BA;
-  --light-blue-transparent: rgba(127, 180, 186, 0.2);
-  --beige: #E7E9E1;
-  --red: rgb(203,51,18);
+  --dark-pink: #e68fc6;
+  --light-pink: #fbefef;
+  --light-pink-transparent: rgba(251, 239, 239, 0.2);
+  --neon-green: #1fe6ad;
   --black: #000000;
   --white: #ffffff;
+
+  --gradient-pink:  #fed6e3;
+  --gradient-blue:  #a8edea;
 }
 
 body {
-  cursor: url("../images/cursors/cursor1.png"), auto;
-  font-family: "Open Sans", sans-serif;
+  /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
+  font-family: "Oxygen", sans-serif;
   font-size: 16px;
-  background: var(--dark-blue);
-  color: var(--beige);
+  background: var(--light-pink);
+  color: var(--black);
 }
 
 h1,
@@ -25,21 +27,23 @@ h5,
 h6 {
   font-family: Aleo, sans-serif;
   text-align: center;
-  color: var(--beige);
+  color: var(--dark-pink);
   letter-spacing: 2px;
 }
 
+/* Controls the circle with arrow near logo & facebook hyperlink on bottom of page*/
 a {
-  color: var(--red);
+  color: var(--light-pink);
   transition: all 0.2s ease-in;
 }
 a:hover{
+  color: var(--black);
   transition: all 0.3s ease 0s;
-  cursor: url("../images/cursors/CursorClick1.png"), auto;
+  /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
 }
 a:active,
 a:focus {
-  color: var(--light-blue);
+  color: var(--white);
 }
 
 sup {
@@ -67,31 +71,36 @@ sup {
 }
 
 .breaker{
-  color: #7FB4BA;
+  color: var(--neon-green);
   border: 1px solid;
   margin-top: 35px;
   margin-bottom: 25px;
 }
 
 .highlight {
-  color: var(--red);
+  color: var(--dark-pink);
 }
+
+.titlehighlight {
+  color: var(--neon-green);
+}
+
 
 .btn-primary {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--light-blue);
-  border-color: var(--light-blue);
+  color: var(--neon-green);
+  border-color: var(--neon-green);
   border-radius: 0px;
   transition: all 0.3s ease 0s;
-  cursor: url("../images/cursors/CursorClick1.png"), auto;
+  /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
 }
 
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: var(--light-blue);
-  color: white;
-  border-color: var(--light-blue);
+  background-color: var(--neon-green);
+  color: var(--white);
+  border-color: var(--neon-green);
 }
 
 /* END Re-useable component styling */
@@ -99,7 +108,7 @@ sup {
 /* Navigation styling */
 
 .navbar-inverse {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-pink);
 }
 
 .navbar-inverse .navbar-brand,
@@ -128,11 +137,11 @@ sup {
 /* Splash screen styling */
 
 #splash-screen {
-  color: #ffffff;
+  color: var(--white);
   height: 100vh;
   position: relative;
 
-  background: linear-gradient(180deg, var(--light-blue), var(--dark-blue) 90%);
+  background: linear-gradient(to top, var(--gradient-pink) 0%, var(--gradient-blue) 100%);
 }
 
 #logo {
@@ -232,7 +241,7 @@ sup {
   display: block;
   overflow: auto;
 
-  background-color: var(--dark-blue);
+  background-color: var(--dark-pink);
 }
 
 .footer-logo {
@@ -241,6 +250,10 @@ sup {
 
 .footer-logo__large {
   height: 100px;
+}
+
+.footer-logo__medium {
+  height: 70px;
 }
 
 .footer-logo__small{

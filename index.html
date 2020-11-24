@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>McGame Jam 2020</title>
+    <title>McGame Jam 2021</title>
     <!--Stylesheets-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link href="stylesheets/stylesheet.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.4.1/hint.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -25,14 +25,15 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#splash-screen">
-                    <span class="highlight">Mc</span>GameJam</a>
+                    <span class="titlehighlight">Mc</span>GameJam</a>
 
                 <div class="navbar-text">
                     <ul class="navbar-nav list-inline">
@@ -52,13 +53,13 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#body-1">About</a>
+                        <a href="#body-1" id="about">About</a>
                     </li>
                     <li>
-                        <a href="#body-2">FAQ</a>
+                        <a href="#body-2" id="faq">FAQ</a>
                     </li>
                     <li>
-                        <a href="#body-3">Sign-up</a>
+                        <a href="#body-3" id="signup">Sign-up</a>
                     </li>
                 </ul>
             </div>
@@ -77,8 +78,8 @@
         </div>
 
         <div class="vertical-center" id="main-sponsor">
-            <span> presented by </span>
-            <img class="splash-logo" src="images/sponsors/mgjgamedevlogoTEXTonly.png" />
+            <span id="presentedby"> presented by </span>
+            <img class="splash-logo" src="images/gdm-text-logo-pink.png" />
         </div>
     </div>
 
@@ -87,11 +88,13 @@
         <div class="paragraph" id="body-1">
 
             <div class="header">
-                <h2>What is McGame Jam?</h2>
+                <h2 id="what">What is McGame Jam?</h2>
             </div>
 
-            <p id="abouttext">McGame Jam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in
-                any shape or form, based on a chosen thematic. Organized by Game Dev McGill , McGame Jam's goal is to bring students together to collaborate and create great games, regardless
+            <p id="abouttext">McGame Jam is a 48 hour game development marathon where attendees are tasked with creating
+                a playable game, in
+                any shape or form, based on a chosen thematic. Organized by Game Dev McGill , McGame Jam's goal is to
+                bring students together to collaborate and create great games, regardless
                 of their skill level. So whether you are a veteran game developer or a first-time jammer, join
                 us for a weekend of game development, learning, and fun.</p>
 
@@ -105,13 +108,18 @@
             <!-- When and Where? -->
             <h3 class="highlight" id="q1">When and where is it?</h3>
 
-            <p id="where">McGame Jam 2020 will be happening between Friday January 10th and Sunday January 12th at L.M. Trottier Building.
+            <p id="where">McGame Jam 2021 will be happening between Friday January 15th and Sunday January 17th EST,
+                remotely through Discord.
             </p>
 
-            <img style="max-width:600px; margin-bottom: 50px;" src="images/mgj2020schedule.png"/>
+            <!-- REMOVED - REMOTE
+            <img style="max-width:600px; margin-bottom: 50px;" src="images/mgj2020schedule.png" />
             <div id="map-div">
-                <iframe id="embedded-map" width="600" height="450" frameborder="0" style="border:0; width:100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.133249335281!2d-73.5790841!3d45.5073962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a3786494805%3A0xdb6457a0cb4753f4!2sL.M.%20Trottier%20Building!5e0!3m2!1sen!2sca!4v1573868574936!5m2!1sen!2sca" allowfullscreen></iframe>
+                <iframe id="embedded-map" width="600" height="450" frameborder="0" style="border:0; width:100%;"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.133249335281!2d-73.5790841!3d45.5073962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a3786494805%3A0xdb6457a0cb4753f4!2sL.M.%20Trottier%20Building!5e0!3m2!1sen!2sca!4v1573868574936!5m2!1sen!2sca"
+                    allowfullscreen></iframe>
             </div>
+            -->
             <div class="breaker"></div>
             <!-- Who can participate? -->
             <h3 class="highlight" id="q2">Who can participate?</h3>
@@ -124,7 +132,8 @@
             <div class="breaker"></div>
             <!-- What should I prepare? -->
             <h3 class="highlight" id="q3">What should I prepare?</h3>
-            <p id="prep">In order to enjoy this competition to the fullest, we recommend you get familiar with programming languages
+            <p id="prep">In order to enjoy this competition to the fullest, we recommend you get familiar with
+                programming languages
                 as well as tools such as the following:
             </p>
             <!-- The following is the same in both languages -->
@@ -167,37 +176,49 @@
                 </span>
             </ul>
 
+            <!--  REMOVED - REMOTE
             <div class="breaker"></div>
-            <!-- Will there be food? -->
+
             <h3 class="highlight" id="q4">Will there be food?</h3>
-            <p id="food">As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening
-                ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee
+            <p id="food">As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday
+                during opening
+                ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and
+                coffee
                 throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the
                 need to purchase your own food.
             </p>
             <div class="breaker"></div>
-            <!-- What should I bring with me? -->
+
             <h3 class="highlight" id="q5">What should I bring with me?</h3>
-            <p id="bring">Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the
-                list goes on. I you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush,
-                deodorant, spare clothing, sleeping bag, etc. if you plan on spending the night with us! Most importantly,
+            <p id="bring">Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens,
+                papers, paint, the
+                list goes on. I you can make a game with it, bring it along! Furthermore, we recommend you bring a
+                toothbrush,
+                deodorant, spare clothing, sleeping bag, etc. if you plan on spending the night with us! Most
+                importantly,
                 please bring your ticket to the event to facilitate badge and t-shirt pickup.
             </p>
+            -->
             <!-- What if I am alone? -->
             <div class="breaker"></div>
             <h3 class="highlight" id="q6">What if I am alone?</h3>
-            <p id="alone">You are welcome to use our Facebook event page to try and find other teammates. Otherwise, we will
-                attempt to group up participants who are alone and are looking for teammates. Additionally, we will set up a Discord server to facilitate team building prior to the event.
+            <p id="alone">You are welcome to use our Facebook event page to try and find other teammates. Otherwise, we
+                will
+                set up a Discord server to facilitate team building prior to the event. As well, there will be an hour
+                after the
+                opening ceremony to form teams during the live event.
             </p>
             <div class="breaker"></div>
-            <!-- How big can my team be? -->            
+            <!-- How big can my team be? -->
             <h3 class="highlight" id="q7">How big can my team be?</h3>
-            <p id="teamsize">Please make sure your team is of at most 8 members! Teams of bigger sizes will be encouraged to split up.
+            <p id="teamsize">Please make sure your team is of at most 8 members! Teams of bigger sizes will be
+                encouraged to split up.
             </p>
             <div class="breaker"></div>
-            <!-- Where do I submit my game for judging? -->            
+            <!-- Where do I submit my game for judging? -->
             <h3 class="highlight" id="q8">Where do I submit my game for judging?</h3>
-            <p id="submit">We will be using itch.io for the submission progress. Detailed instructions will be given at the event.
+            <p id="submit">We will be using Itch.io for the submission progress. Detailed instructions will be given at
+                the event.
             </p>
         </div>
         <div class="breaker"></div>
@@ -205,28 +226,31 @@
         <div class="paragraph" id="body-3">
 
             <div class="header">
-                <h2>Sign-Up!</h2>
+                <h2 id="signupheader">Sign-Up!</h2>
             </div>
 
             <h3 class="highlight" id="tickets">Tickets</h3>
 
-            <p id='descripticket'>To sign up you must purchase a ticket. You will need to bring your ticket to the event,
-                otherwise you may be refused entry. Tickets provide you with the following:
+            <p id='descripticket'>To sign up you must purchase a FREE ticket. You will need to have registered a ticket
+                to access the Discord server and submit your game on Itch.io for judging. Tickets also provide you with
+                the
+                following:
             </p>
             <ul>
                 <!-- s1 to s5 represents Sign-Up 1 to Sign-Up 5 -->
-                <li id="s1">48-hour access to the venue</li>
-                <li id="s2">A free commemorative McGame Jam 2020 t-shirt</li>
-                <li id="s3">Food provided for every meal</li>
-                <li id="s4">Midnight snacks</li>
-                <li id="s5">McGame Jam and sponsor swag*</li>
+                <li id="s1">Ubisoft and Stadia mentoring throughout the development of your game</li>
+                <li id="s2">Technical talks prior to and during the competition</li>
+                <li id="s3">Networking with sponsors</li>
+                <li id="s4">A digital swag pack! (More information to come)</li>
             </ul>
-            <sup id="footnote2">* Subject to availability
-            </sup>
 
             <div>
-                <p><b>Tickets sold out for 2020!</b></p>
-                <button id="signup-button" class="btn btn-primary" type="button" onclick="window.location.href='https://forms.gle/sumCgN99EqPdjjCH9'">Waitlist</button>
+                <br>
+                <p id="ticketswarning"><b>Tickets coming soon for 2021!</b></p>
+                <!--<button id="signup-button" class="btn btn-primary" type="button"
+                    onclick="window.location.href='https://forms.gle/sumCgN99EqPdjjCH9'">Waitlist</button>
+                -->
+                </br>
             </div>
 
         </div>
@@ -238,33 +262,27 @@
 
         <div class="container img-holder">
             <h4></h4>
-			<br/>
+            <br />
             <ul class="list-inline">
                 <li>
                     <img class="footer-logo footer-logo__large" src="images/sponsors/ubi.svg" />
                 </li>
+                <li>
+                    <img class="footer-logo footer-logo__medium"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/98/Stadia_logo.svg" />
+                </li>
             </ul>
-            <br/>
+
             <ul class="list-inline">
                 <li>
                     <img class="footer-logo" src="images/sponsors/eus.png" />
                 </li>
-                <li>
-                    <img class="footer-logo" src="images/sponsors/ea.svg" />
-                </li>
             </ul>
-			<br/>
-            <ul class="list-inline">
-                <li>
-                    <img class="footer-logo footer-logo__small" src="images/sponsors/red_bull.png" />
-                </li>
-            </ul>
-
         </div>
         <div class="container">
             <ul class="list-inline">
                 <li>
-                    <br/>
+                    <br />
                     <a href="http://www.facebook.com/mcgamejam">
                         <i class="fa fa-2x fa-facebook"></i>
                     </a>
@@ -274,20 +292,15 @@
     </footer>
 
     <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="scripts/navbar-scroll.js"></script>
     <script src="scripts/button-scroll.js"></script>
     <script src="scripts/map-clickability.js"></script>
     <script src="scripts/write-data.js"></script>
-    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-    <script>
-        var sf = new Snowflakes({
-            color: "#ffffff"
-        });
-    </script>
 </body>
 
 </html>

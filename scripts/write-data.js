@@ -2,58 +2,60 @@ var ENGLISH
 var FRENCH
 var langselect
 
-$(document).ready(function() {
+$(document).ready(function () {
 	$.ajaxSetup({ cache: false });
 	//writeEnglish();
 });
 
 $.ajaxSetup({
-			cache: false
-	});
-
-$.getJSON( "./scripts/languages/english.json"+'?', { cache: false},function() {})
-	.done(function( data ) {
-		ENGLISH = data;
-		writeEnglish();
-		})
-	.fail( function(d, textStatus, error) {
-        console.error("getJSON failed, status: " + textStatus + ", error: "+error)
-    })
-	.always(function() {
-	});
-
-$.getJSON( "./scripts/languages/french.json"+'?', { cache: false},function() {})
-	.done(function( data ) {
-		FRENCH = data;
-		})
-	.fail( function(d, textStatus, error) {
-        console.error("getJSON failed, status: " + textStatus + ", error: "+error)
-    })
-	.always(function() {
-	});
-
-
-$('#select-en').click(function($e){
-	$e.preventDefault();
-	writeEnglish();	
+	cache: false
 });
 
-$('#select-fr').click(function($e){
+$.getJSON("./scripts/languages/english.json" + '?', { cache: false }, function () { })
+	.done(function (data) {
+		ENGLISH = data;
+		writeEnglish();
+	})
+	.fail(function (d, textStatus, error) {
+		console.error("getJSON failed, status: " + textStatus + ", error: " + error)
+	})
+	.always(function () {
+	});
+
+$.getJSON("./scripts/languages/french.json" + '?', { cache: false }, function () { })
+	.done(function (data) {
+		FRENCH = data;
+	})
+	.fail(function (d, textStatus, error) {
+		console.error("getJSON failed, status: " + textStatus + ", error: " + error)
+	})
+	.always(function () {
+	});
+
+
+$('#select-en').click(function ($e) {
+	$e.preventDefault();
+	writeEnglish();
+});
+
+$('#select-fr').click(function ($e) {
 	$e.preventDefault();
 	writeFrench();
 });
 
 
-function writeEnglish(){
+function writeEnglish() {
 	langselect = "EN";
 	//Big header user sees
 	$('#title-tagline').text(ENGLISH.motto);
 	$('#learn').text(ENGLISH.more);
 	//About
 	$('#parallax-1 h2').text(ENGLISH.what);
+	$('#what').text(ENGLISH.what);
 	$('#abouttext').text(ENGLISH.description);
 	//FAQ
 	$('#parallax-2 h2').text(ENGLISH.faq);
+	$('#about').text(ENGLISH.about);
 	//Questions
 	$('#q1').text(ENGLISH.questions[0]);
 	$('#q2').text(ENGLISH.questions[1]);
@@ -74,6 +76,8 @@ function writeEnglish(){
 	$('#submit').text(ENGLISH.submit);
 	//Signup
 	$('#parallax-3 h2').text(ENGLISH.signup);
+	$('#signup').text(ENGLISH.signup);
+	$('#signupheader').text(ENGLISH.signup);
 	//Tickets
 	$('#tickets').text(ENGLISH.tickettitle);
 	$('#descripticket').text(ENGLISH.tickets[0]);
@@ -85,20 +89,24 @@ function writeEnglish(){
 	$('#footnote1').text(ENGLISH.footnotes[0]);
 	$('#footnote2').text(ENGLISH.footnotes[1]);
 	$('#interest').text(ENGLISH.interested);
-	$('#footer h4').text(ENGLISH.sponsors);	
+	$('#footer h4').text(ENGLISH.sponsors);
 	$('#signup-button').text(ENGLISH.buyticket);
+	$('#ticketswarning').text(ENGLISH.ticketswarning);
+	$('#presentedby').text(ENGLISH.presentedby);
 }
 
-function writeFrench(){
+function writeFrench() {
 	langselect = "EN";
 	//Big header user sees
 	$('#title-tagline').text(FRENCH.motto);
 	$('#learn').text(FRENCH.more);
 	//About
 	$('#parallax-1 h2').text(FRENCH.what);
+	$('#what').text(FRENCH.what);
 	$('#abouttext').text(FRENCH.description);
 	//FAQ
 	$('#parallax-2 h2').text(FRENCH.faq);
+	$('#about').text(FRENCH.about);
 	//Questions
 	$('#q1').text(FRENCH.questions[0]);
 	$('#q2').text(FRENCH.questions[1]);
@@ -119,6 +127,8 @@ function writeFrench(){
 	$('#submit').text(FRENCH.submit);
 	//Signup
 	$('#parallax-3 h2').text(FRENCH.signup);
+	$('#signup').text(FRENCH.signup);
+	$('#signupheader').text(FRENCH.signup);
 	//Tickets
 	$('#tickets').text(FRENCH.tickettitle);
 	$('#descripticket').text(FRENCH.tickets[0]);
@@ -131,6 +141,8 @@ function writeFrench(){
 	$('#footnote2').text(FRENCH.footnotes[1]);
 	$('#interest').text(FRENCH.interested);
 	$('#footer h4').text(FRENCH.sponsors);
-	$('#signup-button').text(FRENCH.buyticket);	
+	$('#signup-button').text(FRENCH.buyticket);
+	$('#ticketswarning').text(FRENCH.ticketswarning);
+	$('#presentedby').text(FRENCH.presentedby);
 }
 
