@@ -84,12 +84,13 @@
         </div>
     </div>
     <!--Drippy effect-->
-    <div class="drip-wrapper" style="background:transparent; height:20%; margin-top:0; margin-bottom:0">
+    <div class="drip-wrapper" style="background:transparent; height:20%">
         <div class="drip-top"></div>
         <div class="drip"></div>
         <div class="drip"></div>
         <div class="drip"></div>
-        <div class="cdrip"></div>
+        <div class="drip"></div>
+        <div class="drip"></div>
         <div class="drip"></div>
         <div class="drip"></div>
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -104,8 +105,9 @@
     </div>
 
     <div id="main-body" style="margin-top:0">
+
         <!-- All text is handled by javascript, but it is added in the HTML as a fail-safe if there's an issue with javascript. -->
-        <div class="paragraph" id="body-1">
+        <div class="paragraph" id="body-1" style="margin-top:0">
 
             <div class="header">
                 <h2 id="what">What is McGame Jam?</h2>
@@ -136,13 +138,13 @@
             </p>
 
             <!-- REMOVED - REMOTE
-            <img style="max-width:600px; margin-bottom: 50px;" src="images/mgj2020schedule.png" />
-            <div id="map-div">
-                <iframe id="embedded-map" width="600" height="450" frameborder="0" style="border:0; width:100%;"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.133249335281!2d-73.5790841!3d45.5073962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a3786494805%3A0xdb6457a0cb4753f4!2sL.M.%20Trottier%20Building!5e0!3m2!1sen!2sca!4v1573868574936!5m2!1sen!2sca"
-                    allowfullscreen></iframe>
-            </div>
-            -->
+        <img style="max-width:600px; margin-bottom: 50px;" src="images/mgj2020schedule.png" />
+        <div id="map-div">
+            <iframe id="embedded-map" width="600" height="450" frameborder="0" style="border:0; width:100%;"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.133249335281!2d-73.5790841!3d45.5073962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a3786494805%3A0xdb6457a0cb4753f4!2sL.M.%20Trottier%20Building!5e0!3m2!1sen!2sca!4v1573868574936!5m2!1sen!2sca"
+                allowfullscreen></iframe>
+        </div>
+        -->
             <div class="breaker"></div>
             <!-- Who can participate? -->
             <h3 class="highlight" id="q2">Who can participate?</h3>
@@ -150,7 +152,7 @@
                 McGame Jam is open to all everyone aged 18 or older, with priority given to students. We reserve
                 the right to cancel any tickets which do not respect those conditions.
                 <!--<sup id="footnote1">*If your school does not provide you with an email address or if you are younger than 18, please contact
-                us and we will try to help.</sup>-->
+            us and we will try to help.</sup>-->
             </p>
             <div class="breaker"></div>
             <!-- What should I prepare? -->
@@ -201,28 +203,28 @@
             </ul>
 
             <!--  REMOVED - REMOTE
-            <div class="breaker"></div>
+        <div class="breaker"></div>
 
-            <h3 class="highlight" id="q4">Will there be food?</h3>
-            <p id="food">As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday
-                during opening
-                ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and
-                coffee
-                throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the
-                need to purchase your own food.
-            </p>
-            <div class="breaker"></div>
+        <h3 class="highlight" id="q4">Will there be food?</h3>
+        <p id="food">As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday
+            during opening
+            ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and
+            coffee
+            throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the
+            need to purchase your own food.
+        </p>
+        <div class="breaker"></div>
 
-            <h3 class="highlight" id="q5">What should I bring with me?</h3>
-            <p id="bring">Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens,
-                papers, paint, the
-                list goes on. I you can make a game with it, bring it along! Furthermore, we recommend you bring a
-                toothbrush,
-                deodorant, spare clothing, sleeping bag, etc. if you plan on spending the night with us! Most
-                importantly,
-                please bring your ticket to the event to facilitate badge and t-shirt pickup.
-            </p>
-            -->
+        <h3 class="highlight" id="q5">What should I bring with me?</h3>
+        <p id="bring">Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens,
+            papers, paint, the
+            list goes on. I you can make a game with it, bring it along! Furthermore, we recommend you bring a
+            toothbrush,
+            deodorant, spare clothing, sleeping bag, etc. if you plan on spending the night with us! Most
+            importantly,
+            please bring your ticket to the event to facilitate badge and t-shirt pickup.
+        </p>
+        -->
             <!-- What if I am alone? -->
             <div class="breaker"></div>
             <h3 class="highlight" id="q6">What if I am alone?</h3>
@@ -274,10 +276,9 @@
 
             <div>
                 <br>
-                <p id="ticketswarning"><b>Tickets coming soon for 2021!</b></p>
-                <!--<button id="signup-button" class="btn btn-primary" type="button"
-                    onclick="window.location.href='https://forms.gle/sumCgN99EqPdjjCH9'">Waitlist</button>
-                -->
+                <!--<p id="ticketswarning"><b>Tickets coming soon for 2021!</b></p>-->
+                <button id="signup-button" class="btn btn-primary" type="button"
+                onclick="window.location.href=''" style="width:auto">Get your tickets</button>
                 </br>
             </div>
 
@@ -286,8 +287,21 @@
     </div>
     <!--/#main-body-->
 
-    <footer id="footer">
+    <!--Bottom drippy effect rounding-->
+    <div class="drip-wrapper" style="background:transparent; height:20%; margin-top:0; margin-bottom:0">
+        <div class="drip-bottom"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
 
+    <footer id="footer" style="margin-top:0">
         <div class="container img-holder">
             <h4></h4>
             <br />

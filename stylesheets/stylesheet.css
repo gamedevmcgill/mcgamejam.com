@@ -12,7 +12,7 @@
 }
 
 body {
-  /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
+  cursor: url("../images/cursors/Cursor.png"), auto;
   font-family: "Oxygen", sans-serif;
   font-size: 16px;
   background: var(--light-pink);
@@ -296,16 +296,16 @@ sup {
         position: absolute;
         width: 100%;
         bottom: -30px;
-        background: var(--light-pink);
+        background: var(--dark-pink);
     }
 
     .drip-wrapper .drip {
-        border-radius: 50%;
+        border-radius: 0% 50% 50% 50%;
         height: 50px;
         position: absolute;
         width: 50px;
         background: var(--gradient-pink);
-        transform: translate(0, 0) scale(2);
+        transform: translate(0, 0) scale(2) rotate(45deg);
         animation: drip-1 cubic-bezier(0.66, 0.1, 0.97, 0.36) 3s infinite;
     }
 
