@@ -1,20 +1,22 @@
 /* Global body styling */
 :root {
-  --dark-blue: #102232;
-  --light-blue: #7FB4BA;
-  --light-blue-transparent: rgba(127, 180, 186, 0.2);
-  --beige: #E7E9E1;
-  --red: rgb(203,51,18);
+  --dark-pink: #e68fc6;
+  --light-pink: #fbefef;
+  --light-pink-transparent: rgba(251, 239, 239, 0.2);
+  --neon-green: #1fe6ad;
   --black: #000000;
   --white: #ffffff;
+
+  --gradient-pink:  #fed6e3;
+  --gradient-blue:  #a8edea;
 }
 
 body {
-  cursor: url("../images/cursors/cursor1.png"), auto;
-  font-family: "Open Sans", sans-serif;
+  cursor: url("../images/cursors/Cursor.png"), auto;
+  font-family: "Oxygen", sans-serif;
   font-size: 16px;
-  background: var(--dark-blue);
-  color: var(--beige);
+  background: var(--light-pink);
+  color: var(--black);
 }
 
 h1,
@@ -25,21 +27,23 @@ h5,
 h6 {
   font-family: Aleo, sans-serif;
   text-align: center;
-  color: var(--beige);
+  color: var(--dark-pink);
   letter-spacing: 2px;
 }
 
+/* Controls the circle with arrow near logo & facebook hyperlink on bottom of page*/
 a {
-  color: var(--red);
+  color: var(--light-pink);
   transition: all 0.2s ease-in;
 }
 a:hover{
+  color: var(--black);
   transition: all 0.3s ease 0s;
-  cursor: url("../images/cursors/CursorClick1.png"), auto;
+  /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
 }
 a:active,
 a:focus {
-  color: var(--light-blue);
+  color: var(--white);
 }
 
 sup {
@@ -67,31 +71,36 @@ sup {
 }
 
 .breaker{
-  color: #7FB4BA;
+  color: var(--neon-green);
   border: 1px solid;
   margin-top: 35px;
   margin-bottom: 25px;
 }
 
 .highlight {
-  color: var(--red);
+  color: var(--dark-pink);
 }
+
+.titlehighlight {
+  color: var(--neon-green);
+}
+
 
 .btn-primary {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--light-blue);
-  border-color: var(--light-blue);
+  color: var(--neon-green);
+  border-color: var(--neon-green);
   border-radius: 0px;
   transition: all 0.3s ease 0s;
-  cursor: url("../images/cursors/CursorClick1.png"), auto;
+  /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
 }
 
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: var(--light-blue);
-  color: white;
-  border-color: var(--light-blue);
+  background-color: var(--neon-green);
+  color: var(--white);
+  border-color: var(--neon-green);
 }
 
 /* END Re-useable component styling */
@@ -99,7 +108,7 @@ sup {
 /* Navigation styling */
 
 .navbar-inverse {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-pink);
 }
 
 .navbar-inverse .navbar-brand,
@@ -128,11 +137,11 @@ sup {
 /* Splash screen styling */
 
 #splash-screen {
-  color: #ffffff;
+  color: var(--white);
   height: 100vh;
   position: relative;
 
-  background: linear-gradient(180deg, var(--light-blue), var(--dark-blue) 90%);
+  background: linear-gradient(to top, var(--gradient-pink) 0%, var(--gradient-blue) 100%);
 }
 
 #logo {
@@ -232,7 +241,7 @@ sup {
   display: block;
   overflow: auto;
 
-  background-color: var(--dark-blue);
+  background-color: var(--dark-pink);
 }
 
 .footer-logo {
@@ -243,8 +252,172 @@ sup {
   height: 100px;
 }
 
+.footer-logo__medium {
+  height: 70px;
+}
+
 .footer-logo__small{
 	height: 23px;
 }
 
 /* END Footer styling */
+
+/* Drippy effect from 404ryannotfound on CodePen */
+.color{}
+
+.drip-wrapper {
+    display: flex;
+    border: 0px solid var(--gradient-pink);
+    filter: url("#goo");
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    left: auto;
+    z-index: -1;
+}
+
+    .drip-wrapper .drip-top {
+        border-radius: 30%;
+        height: 50px;
+        position: absolute;
+        width: 100%;
+        top: -30px;
+        background: var(--gradient-pink);
+    }
+
+    .drip-wrapper .drip-bottom {
+        border-radius: 10%;
+        height: 50px;
+        position: absolute;
+        width: 100%;
+        bottom: -30px;
+        background: var(--dark-pink);
+    }
+
+    .drip-wrapper .drip {
+        border-radius: 0% 50% 50% 50%;
+        height: 50px;
+        position: absolute;
+        width: 50px;
+        background: var(--gradient-pink);
+        transform: translate(0, 0) scale(2) rotate(45deg);
+        animation: drip-1 cubic-bezier(0.66, 0.1, 0.97, 0.36) 3s infinite;
+    }
+
+        .drip-wrapper .drip:nth-child(1) {
+            animation-name: drip-1;
+            animation-delay: 1.25s;
+            left: 5%;
+            top: -29%;
+        }
+
+        .drip-wrapper .drip:nth-child(2) {
+            animation-name: drip-2;
+            animation-delay: 0.5s;
+            left: 10%;
+            top: -20%;
+        }
+
+        .drip-wrapper .drip:nth-child(3) {
+            animation-name: drip-3;
+            animation-delay: 2s;
+            left: 20%;
+            top: -25%;
+        }
+
+        .drip-wrapper .drip:nth-child(4) {
+            animation-name: drip-4;
+            animation-delay: 1s;
+            left: 30%;
+            top: -25%;
+        }
+
+        .drip-wrapper .drip:nth-child(5) {
+            animation-name: drip-5;
+            animation-delay: 1.75s;
+            left: 50%;
+            height: 75px;
+            width: 50px;
+            top: -20%;
+        }
+
+        .drip-wrapper .drip:nth-child(6) {
+            animation-name: drip-1;
+            animation-delay: 2.25s;
+            left: 60%;
+            top: -20%;
+        }
+
+        .drip-wrapper .drip:nth-child(7) {
+            animation-name: drip-2;
+            animation-delay: 1.5s;
+            left: 75%;
+            top: -20%;
+            height: 50px;
+            width: 30px;
+        }
+
+        .drip-wrapper .drip:nth-child(8) {
+            animation-name: drip-3;
+            animation-delay: 1s;
+            left: 90%;
+            top: -25%;
+        }
+
+        .drip-wrapper .drip:nth-child(9) {
+            animation-name: drip-4;
+            animation-delay: 0.75s;
+            left: 100%;
+            top: -25%;
+        }
+
+        .drip-wrapper .drip:nth-child(10) {
+            animation-name: drip-5;
+            animation-delay: 2.5s;
+            left: 50%;
+            top: -20%;
+            height: 50px;
+            width: 40px;
+        }
+
+        .drip-wrapper .drip:nth-child(11) {
+            animation-name: drip-5;
+            animation-delay: 0.25s;
+            left: -20%;
+            top: -20%;
+        }
+
+@keyframes drip-1 {
+    to {
+        transform: translateY(500px) scale(0);
+    }
+}
+
+@keyframes drip-2 {
+    to {
+        transform: translateY(800px) scale(0);
+    }
+}
+
+@keyframes drip-3 {
+    to {
+        transform: translateY(600px) scale(0);
+    }
+}
+
+@keyframes drip-4 {
+    to {
+        transform: translateY(500px) scale(0.4);
+    }
+}
+
+@keyframes drip-5 {
+    to {
+        transform: translateY(400px) scale(0.2);
+    }
+}
