@@ -18,7 +18,7 @@
   "whocanparticipate": "McGame Jam is open to all everyone aged 18 or older, with priority given to students. We reserve the right to cancel any tickets which do not respect those conditions.",
   "description": "McGame Jam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in any shape or form, based on a chosen thematic. Organized by Game Dev McGill, McGame Jam's goal is to bring students together to collaborate and create great games, regardless of their skill level. So whether you are a veteran game developer or a first-time jammer, join us for a weekend of game development, learning, and fun.",
   "software": "In order to enjoy this competition to the fullest, we recommend you get familiar with programming languages as well as tools such as the following:",
-  "actualWhereWhen": "McGame Jam 2021 will be happening between Friday January 15th and Sunday January 17th EST, remotely through Discord.",
+  "actualWhereWhen": "McGame Jam 2022 will be happening between Friday March 12th and Sunday March 14th EST, remotely through Discord.",
   "food": "As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the need to purchase your own food.",
   "tobring": "Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the list goes on. If you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush, deodorant, spare clothing, sleeping bag, etc.  if you plan on spending the night with us! Most importantly, please bring your ticket to the event to facilitate badge and t-shirt pickup.",
   "alone": "You are welcome to use our Facebook event page to try and find other teammates. Otherwise, we will attempt to group up participants who are alone and are looking for teammates. Additionally, we will set up a Discord server to facilitate team building prior to the event.",
@@ -27,7 +27,7 @@
   "tickettitle": "Tickets",
   "tickets": [
     "To sign up you must purchase a FREE ticket. You will need to have registered a ticket to access the Discord server and submit your game on Itch.io for judging. Tickets also provide you with the following:",
-    "Ubisoft and Stadia mentoring throughout the development of your game",
+    "Ubisoft mentoring throughout the development of your game",
     "Technical talks prior to and during the competition",
     "Networking with sponsors",
     "A digital swag pack! (More information to come)"
@@ -39,9 +39,9 @@
   "signup": "Sign Up!",
   "sponsorUs": "Sponsor Us!",
   "footnotes": [
-    "*Students can qualify for discounted tickets upon registration."
+    "*If your school does not provide student email addresses or you are less than 18 years old, contact us and we will try to accommodate you."
   ],
   "buyticket": "Get your tickets",
-  "ticketswarning": "Tickets coming soon for 2021!",
+  "ticketswarning": "Tickets coming soon for 2022!",
   "presentedby": "presented by"
 }
