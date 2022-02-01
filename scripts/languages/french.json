@@ -18,7 +18,7 @@
   "whocanparticipate": "McGame Jam est ouvert à tous âgés de plus de 18 ans, priorité sera donnée aux étudiants. Nous nous réservons le droit d'annuler tout ticket ne respectant pas ces conditions.",
   "description": "Organisé par le club de développement de jeux vidéo de l'université McGill (Game Dev McGill), McGame Jam est un événement qui défie les étudiants de créer un prototype de jeu basé sur un thème particulier. Que vous soyez un expert ou novice, vous êtes invités à venir! Nous sommes sûrs que vous finirez McGame Jam en ayant créé un jeu dont vous êtes fier et appris quelque chose de nouveau.",
   "software": "Afin d'apprécier cette compétition au maximum, nous vous recommandons de vous familiariser avec les langages de programmation et outils suivants:",
-  "actualWhereWhen": "McGame Jam 2021 aura lieu entre vendredi 15 janvier et dimanche 17 janvier EST, en ligne.",
+  "actualWhereWhen": "McGame Jam 2022 aura lieu entre vendredi 12 mars et dimanche 14 mars EST, en ligne.",
   "food": "Inclus dans le prix du billets sont: un souper le Vendredi, un dinner et un souper le Samedi et un dinner le dimanche. De plus, les petit-déjeneurs ainsi que des collations seront servis tout au long du week-end.",
   "tobring": "Portable, tablette graphique, crayons, papier, ciseaux, etc. Si vous pouvez l’utiliser pour créer un jeu, amenez-le! Nous vous recommandons également d'apporter une brosse à dents, du déodorant, des vêtements de rechange, un sac de couchage, et tout autre équipement si vous choisissez de passer la nuit avec nous! N'oubliez surtout pas d'apporter votre billet à l'événement pour faciliter la récupération de votre badge et t-shirt.",
   "alone": "Aucun problème! Que vous soyez seul(e) ou en équipe, nous aurons une période de brainstorming durant laquelle vous pourrez vous joindre à une équipe. Entre autres, un serveur Discord sera ouvert pour faciliter la création d’équipe.",
@@ -27,7 +27,7 @@
   "tickettitle": "Billets",
   "tickets": [
     "Vous devez récupérer un billet GRATUIT pour vous inscrire, recevoir l'invitation au serveur Discord et le lien Itch.io. Les billets vous donneront accès à:",
-    "Des conseils d'Ubisoft et Stadia tout au long du développement de votre jeu",
+    "Des conseils d'Ubisoft tout au long du développement de votre jeu",
     "Des présentations techniques avant et pendant la compétition",
     "Networking avec les sponsors",
     "Goodies virtuels de McGame Jam (plus d'informations à venir)"
@@ -42,6 +42,6 @@
     "*Si votre école ne vous fournit pas une addresse courriel ou vous êtes âgé de moins de 18 ans, contactez nous et nous essayerons de vous accommoder."
   ],
   "buyticket": "Procurer vos billets",
-  "ticketswarning": "Billets bientôt disponibles pour 2021!",
+  "ticketswarning": "Billets bientôt disponibles pour 2022!",
   "presentedby": "présenté par"
 }
