@@ -8,7 +8,7 @@ This is the static website for McGame Jam, the video game hackathon ran by GameD
 
 ## Start development server
 0. open cmd in the top folder.
-1. Run `npm i - g serve` to set up the server.
+1. Run `npm i -g serve` to set up the server.
 2. Run `serve` to display on http://localhost:3000/.
 3. The server automatically updates.
 4. Press ctrl-C to cancel the server.
