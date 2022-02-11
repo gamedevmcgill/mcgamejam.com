@@ -36,7 +36,7 @@ h6 {
 
 /* Controls the circle with arrow near logo & facebook hyperlink on bottom of page*/
 a {
-  color: var(--fake-blue);
+  color: var(--black);
   transition: all 0.2s ease-in;
 }
 a:hover{
@@ -89,8 +89,9 @@ sup {
 }
 
 .btn-primary {
-  color: var(--fake-blue);
-  border-color: var(--fake-blue);
+  color: var(--black);
+  border-color: var(--sand-dark);
+  background-color: var(--sand-lightest);
   border-radius: 0px;
   transition: all 0.3s ease 0s;
   /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
@@ -99,9 +100,9 @@ sup {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: var(--fake-blue);
+  background-color: var(--sand-dark);
   color: var(--white);
-  border-color: var(--fake-blue);
+  border-color: var(--sand-lightest);
 }
 
 /* END Re-useable component styling */
