@@ -2,7 +2,7 @@
   "motto": "Think. Create. Play.",
   "more": "Find Out More",
   "language": "Français",
-  "what": "What is McGame Jam?",
+  "what": "What is McGamejam?",
   "faq": "F.A.Q.",
   "about": "About",
   "questions": [
@@ -15,24 +15,24 @@
     "How big can my team be?",
     "Where do I submit my game for judging?"
   ],
-  "whocanparticipate": "McGame Jam is open to all everyone aged 18 or older, with priority given to students. We reserve the right to cancel any tickets which do not respect those conditions.",
-  "description": "McGame Jam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in any shape or form, based on a chosen thematic. Organized by Game Dev McGill, McGame Jam's goal is to bring students together to collaborate and create great games, regardless of their skill level. So whether you are a veteran game developer or a first-time jammer, join us for a weekend of game development, learning, and fun.",
+  "whocanparticipate": "McGamejam is open to all everyone aged 18 or older, with priority given to students. We reserve the right to cancel any tickets which do not respect those conditions.",
+  "description": "McGamejam is a 48 hour game development marathon where attendees are tasked with creating a playable game, in any shape or form, based on a chosen thematic. Organized by Game Dev McGill, McGamejam's goal is to bring students together to collaborate and create great games, regardless of their skill level. So whether you are a veteran game developer or a first-time jammer, join us for a weekend of game development, learning, and fun.",
   "software": "In order to enjoy this competition to the fullest, we recommend you get familiar with programming languages as well as tools such as the following:",
-  "actualWhereWhen": "McGame Jam 2022 will be happening between Friday March 11th and Sunday March 13th EST, remotely through Discord.",
+  "actualWhereWhen": "McGamejam 2023 will be happening between Friday January 6th and Sunday January 8th, in the Trottier building on McGill campus (3630 Rue University Montreal, QC H3A 0C6)",
   "food": "As usual, we will be providing meals (breakfast, lunch, supper), starting from supper on Friday during opening ceremonies until lunch on Sunday before the last stretch. Furthermore, we will be serving snacks and coffee throughout the day. Additionally, there are multiple restaurants and supermarkets around if you feel the need to purchase your own food.",
   "tobring": "Bring whatever you need to make a game, whether that is a computer, a drawing tablet, pens, papers, paint, the list goes on. If you can make a game with it, bring it along! Furthermore, we recommend you bring a toothbrush, deodorant, spare clothing, sleeping bag, etc.  if you plan on spending the night with us! Most importantly, please bring your ticket to the event to facilitate badge and t-shirt pickup.",
   "alone": "You are welcome to use our Facebook event page to try and find other teammates. Otherwise, we will attempt to group up participants who are alone and are looking for teammates. Additionally, we will set up a Discord server to facilitate team building prior to the event.",
-  "teamsize": "Please make sure your team is of at most 8 members! Teams of bigger sizes will be encouraged to split up.",
-  "submit": "We will be using Itch.io for the submission progress. Detailed instructions will be given at the event.",
+  "teamsize": "Please make sure your team is of at most 8 members! Teams of bigger sizes will be asked to split up",
+  "submit": "We will be using Itch.io for the submission process. Detailed instructions will be given at the event.",
   "tickettitle": "Tickets",
   "tickets": [
-    "To sign up you must purchase a FREE ticket. You will need to have registered a ticket to access the Discord server and submit your game on Itch.io for judging. Tickets also provide you with the following:",
+    "To sign up you must purchase a 15-20$ ticket. You will need to have registered a ticket to access the Discord server and submit your game on Itch.io for judging. Tickets also provide you with the following:",
     "Ubisoft mentoring throughout the development of your game",
     "Technical talks prior to and during the competition",
     "Networking with sponsors",
-    "A digital swag pack! (More information to come)"
+    "A swag pack and some additional goodies!"
   ],
-  "sponsors": "Our Sponsors",
+  "sponsors": "Our previous sponsors",
   "updates": "Stay tuned for updates",
   "specialThanks": "We would also like to thank the following organizations for their help",
   "interested": "Interested in participating? Want to sponsor us?",
@@ -42,6 +42,6 @@
     "*If your school does not provide student email addresses or you are less than 18 years old, contact us and we will try to accommodate you."
   ],
   "buyticket": "Get your tickets",
-  "ticketswarning": "Tickets coming soon for 2022!",
+  "ticketswarning": "Tickets coming soon for 2023!",
   "presentedby": "presented by"
 }
