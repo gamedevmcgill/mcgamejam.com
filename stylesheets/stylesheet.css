@@ -1,6 +1,6 @@
 /* Global body styling */
 :root {
-  --black: #252525;
+  --pseudo-black: #252525;
   --white: #ffffff;
 
   --sand-dark: #c0674b;
@@ -18,7 +18,7 @@ body {
   cursor: url("../images/cursors/Cursor.png"), auto;
   font-family: "Oxygen", sans-serif;
   font-size: 16px;
-  background: var(--black);
+  background: var(--pseudo-black);
   color: var(--sand-lightest);
 }
 
@@ -36,7 +36,7 @@ h6 {
 
 /* Controls the circle with arrow near logo & facebook hyperlink on bottom of page*/
 a {
-  color: var(--black);
+  color: var(--pseudo-black);
   transition: all 0.2s ease-in;
 }
 a:hover{
@@ -89,7 +89,7 @@ sup {
 }
 
 .btn-primary {
-  color: var(--black);
+  color: var(--pseudo-black);
   border-color: var(--sand-dark);
   background-color: var(--sand-lightest);
   border-radius: 0px;
