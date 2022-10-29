@@ -27,23 +27,23 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#navbar-collapse" aria-expanded="false">
+                        data-target="#navbar-collapse" aria-expanded="false" style="background-color: #f7f5fb">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar" style="background-color: #2c2c2c"></span>
+                    <span class="icon-bar" style="background-color: #2c2c2c"></span>
+                    <span class="icon-bar" style="background-color: #2c2c2c"></span>
                 </button>
-                <a class="navbar-brand" href="#splash-screen">
-                    <span class="titlehighlight">Mc</span>GameJam
+                <a class="navbar-brand" href="#splash-screen" style="color: #2c2c2c">
+                    <span class="titlehighlight">MC</span>GAMEJAM
                 </a>
 
                 <div class="navbar-text">
                     <ul class="navbar-nav list-inline">
                         <li>
-                            <a href="#" id="select-en">EN</a>
+                            <a href="#" id="select-en" style="color: #2c2c2c">ENGLISH</a>
                         </li>
                         <li>
-                            <a href="#" id="select-fr">FR</a>
+                            <a href="#" id="select-fr" style="color: #2c2c2c">FRANÇAIS</a>
                         </li>
                     </ul>
                 </div>
@@ -54,13 +54,13 @@
                 <ul class="nav navbar-nav"></ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#body-1" id="about">About</a>
+                        <a href="#body-1" id="about" style="color: #2c2c2c">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#body-2" id="faq">FAQ</a>
+                        <a href="#body-2" id="faq" style="color: #2c2c2c">FAQ</a>
                     </li>
                     <li>
-                        <a href="#body-3" id="signup">Sign-up</a>
+                        <a href="#body-3" id="signup" style="color: #2c2c2c">SIGN UP</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +72,7 @@
     <div class="jumbotron vertical-center" id="splash-screen" style="margin-bottom:0">
         <div class="container text-center">
             <div id="canvasDiv" style="width:100%;height:100%;"></div>
-            <img class="img-responsive center-block" id="logo" src="images/2022-logo.png" alt="McGameJam" />
+            <img class="img-responsive center-block" id="logo" src="images/2023-logo.svg" alt="McGameJam" />
             <a href="#main-body">
                 <i class="fa fa-chevron-circle-down fa-4x" aria-hidden="true"></i>
             </a>
@@ -80,7 +80,7 @@
 
         <div class="vertical-center" id="main-sponsor">
             <span id="presentedby"> presented by </span>
-            <img class="splash-logo" src="images/gdm-text-logo-dark-blue.png" />
+            <img class="splash-logo" src="images/gdm-text-brick-red-logo.png" />
         </div>
     </div>
 
@@ -115,15 +115,7 @@
             <p id="where">
                 McGameJam 2023 will be happening between Friday January 6th and Sunday January 8th, in the Trottier building on McGill campus (3630 Rue University, Montreal, QC H3A 0C6)
             </p>
-
-            <!-- REMOVED - REMOTE
-        <img style="max-width:600px; margin-bottom: 50px;" src="images/mgj2020schedule.png" />
-        <div id="map-div">
-            <iframe id="embedded-map" width="600" height="450" frameborder="0" style="border:0; width:100%;"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2796.133249335281!2d-73.5790841!3d45.5073962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a3786494805%3A0xdb6457a0cb4753f4!2sL.M.%20Trottier%20Building!5e0!3m2!1sen!2sca!4v1573868574936!5m2!1sen!2sca"
-                allowfullscreen></iframe>
-        </div>
-        -->
+            
             <div class="breaker"></div>
             <!-- Who can participate? -->
             <h3 class="highlight" id="q2">Who can participate?</h3>
@@ -171,12 +163,12 @@
                 </span>
                 <li>
                     <span class="hint--bottom" aria-label="Unity">
-                        <img class="software-logo" src="images/software/unity_new_white.png" alt="Unity Engine"/>
+                        <img class="software-logo" src="images/software/unity-white-logo.png" alt="Unity Engine"/>
                 </li>
                 </span>
                 <li>
                     <span class="hint--bottom" aria-label="Unreal Engine">
-                        <img class="software-logo" src="images/software/unreal_white.png" alt="Unreal Engine"/>
+                        <img class="software-logo" src="images/software/unreal-white-logo.png" alt="Unreal Engine"/>
                 </li>
                 </span>
             </ul>
@@ -245,7 +237,7 @@
 
     <footer id="footer" style="margin-top:0">
         <div class="container img-holder">
-            <h2>Previous Sponsors</h2>
+            <h2 id="sponsors"></h2>
             <br />
             <ul class="list-inline">
                 <li>
@@ -261,7 +253,7 @@
                 </li>
                 <li>
                     <img class="footer-logo footer-logo__medium"
-                         src="images/sponsors/Unity_New_Logo_Black_RGB.png"
+                         src="images/sponsors/unity-black-logo.png"
                          alt="Unity" />
                 </li>
             </ul>

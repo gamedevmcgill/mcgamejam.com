@@ -1,17 +1,10 @@
 /* Global body styling */
 :root {
-  --pseudo-black: #252525;
-  --white: #ffffff;
-
-  --sand-dark: #c0674b;
-  --sand-med: #e19356;
-  --sand-light: #eaa65f;
-  --sand-lightest: #fcdba7;
-  --blue-dark: #406275;
-  --fake-blue: #6998de;
-
-  --gradient-header-top:  #c0674b;
-  --gradient-header-bottom:  #eaa65f;
+  --pseudo-black: #2c2c2c;
+  --white: #f7f5fb;
+  --blue-green: #7FCFCC;
+  --brick-red: #D62C4E;
+  --silver-blue: #526f82;
 }
 
 body {
@@ -19,7 +12,7 @@ body {
   font-family: "Oxygen", sans-serif;
   font-size: 16px;
   background: var(--pseudo-black);
-  color: var(--sand-lightest);
+  color: var(--white);
 }
 
 h1,
@@ -30,7 +23,7 @@ h5,
 h6 {
   font-family: Aleo, sans-serif;
   text-align: center;
-  color: var(--sand-dark);
+  color: var(--brick-red);
   letter-spacing: 2px;
 }
 
@@ -42,7 +35,6 @@ a {
 a:hover{
   color: var(--white);
   transition: all 0.3s ease 0s;
-  /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
 }
 a:active,
 a:focus {
@@ -74,24 +66,24 @@ sup {
 }
 
 .breaker{
-  color: var(--blue-dark);
+  color: var(--white);
   border: 1px solid;
   margin-top: 35px;
   margin-bottom: 25px;
 }
 
 .highlight {
-  color: var(--sand-dark);
+  color: var(--white);
 }
 
 .titlehighlight {
-  color: var(--fake-blue);
+  color: var(--brick-red);
 }
 
 .btn-primary {
   color: var(--pseudo-black);
-  border-color: var(--sand-dark);
-  background-color: var(--sand-lightest);
+  border-color: var(--silver-blue);
+  background-color: var(--blue-green);
   border-radius: 0px;
   transition: all 0.3s ease 0s;
   /*cursor: url("../images/cursors/ghost-cursor.png"), auto;*/
@@ -100,9 +92,9 @@ sup {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: var(--sand-dark);
   color: var(--white);
-  border-color: var(--sand-lightest);
+  border-color: var(--blue-green);
+  background-color: var(--silver-blue);
 }
 
 /* END Re-useable component styling */
@@ -110,13 +102,13 @@ sup {
 /* Navigation styling */
 
 .navbar-inverse {
-  background-color: var(--sand-light);
+  background-color: var(--white);
 }
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
   font-family: Montserrat, sans-serif;
-  color: var(--white);
+  color: var(--pseudo-black);
 }
 
 .navbar-right {
@@ -143,7 +135,7 @@ sup {
   height: 100vh;
   position: relative;
 
-  background: linear-gradient(to top, var(--gradient-header-bottom) 0%, var(--gradient-header-top) 100%);
+  background: linear-gradient(to top, var(--silver-blue) 0%, var(--white) 100%);
 }
 
 #logo {
@@ -243,7 +235,7 @@ sup {
   display: block;
   overflow: auto;
 
-  background-color: var(--sand-light);
+  background-color: var(--white);
 }
 
 .footer-logo {
