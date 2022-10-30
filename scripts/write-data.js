@@ -93,6 +93,8 @@ function writeEnglish() {
 	$('#signup-button').text(ENGLISH.buyticket);
 	$('#ticketswarning').text(ENGLISH.ticketswarning);
 	$('#presentedby').text(ENGLISH.presentedby);
+	//Footer
+	$('#sponsors').text(ENGLISH.sponsors);
 }
 
 function writeFrench() {
@@ -144,5 +146,7 @@ function writeFrench() {
 	$('#signup-button').text(FRENCH.buyticket);
 	$('#ticketswarning').text(FRENCH.ticketswarning);
 	$('#presentedby').text(FRENCH.presentedby);
+	//Footer
+	$('#sponsors').text(FRENCH.sponsors);
 }
 
