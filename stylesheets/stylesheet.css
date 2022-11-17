@@ -251,7 +251,11 @@ sup {
 }
 
 .footer-logo__small{
-  height: 30px;
+  height: 50px;
+}
+
+.footer-logo__extra_small{
+  height: 35px;
 }
 
 /* END Footer styling */
