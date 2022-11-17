@@ -1,5 +1,5 @@
-# [McGame Jam](https://mcgamejam.ca)
-This is the static website for McGame Jam, the video game hackathon ran by GameDev McGill.
+# [McGameJam](https://mcgamejam.ca)
+This is the static website for McGameJam, the video game hackathon ran by GameDev McGill.
 
 ## Set Up
 1. Install [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm).
