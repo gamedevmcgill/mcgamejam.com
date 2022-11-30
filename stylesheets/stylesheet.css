@@ -243,7 +243,8 @@ sup {
 }
 
 .footer-logo__large {
-  height: 130px;
+  height: 210px;
+  padding: 0px 0px 50px;
 }
 
 .footer-logo__medium {
