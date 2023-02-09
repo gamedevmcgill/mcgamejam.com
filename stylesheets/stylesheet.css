@@ -198,13 +198,6 @@ sup {
   margin-top: 100px;
 }
 
-#embedded-map {
-  pointer-events: none;
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
-}
-
 #signup-button {
   width: 175px;
   font-size: 14pt;
